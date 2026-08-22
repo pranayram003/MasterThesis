@@ -1,0 +1,248 @@
+{
+  "summary": {
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "items": "data/eval_val.jsonl",
+    "n": 20,
+    "accuracy": 0.25,
+    "accuracy_by_label": {
+      "contradiction": 0.0,
+      "neutral": 1.0,
+      "entailment": 0.0
+    },
+    "n_by_label": {
+      "contradiction": 9,
+      "neutral": 5,
+      "entailment": 6
+    },
+    "diagnostic_n": 15,
+    "shortcut_rate": 0.13333333333333333,
+    "confusion": {
+      "contradiction->neutral": 7,
+      "neutral->neutral": 5,
+      "entailment->neutral": 6,
+      "contradiction->entailment": 2
+    }
+  },
+  "records": [
+    {
+      "idx": 0,
+      "gold": "contradiction",
+      "shortcut": "entailment",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 22.5,
+        "B": 24.5,
+        "C": 22.25
+      }
+    },
+    {
+      "idx": 1,
+      "gold": "neutral",
+      "shortcut": "neutral",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 24.875,
+        "B": 19.375,
+        "C": 21.5
+      }
+    },
+    {
+      "idx": 2,
+      "gold": "entailment",
+      "shortcut": "contradiction",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 18.0,
+        "B": 19.625,
+        "C": 26.375
+      }
+    },
+    {
+      "idx": 3,
+      "gold": "contradiction",
+      "shortcut": "entailment",
+      "pred": "entailment",
+      "letter_logits": {
+        "A": 24.0,
+        "B": 23.5,
+        "C": 19.75
+      }
+    },
+    {
+      "idx": 4,
+      "gold": "entailment",
+      "shortcut": "contradiction",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 19.375,
+        "B": 27.125,
+        "C": 21.125
+      }
+    },
+    {
+      "idx": 5,
+      "gold": "contradiction",
+      "shortcut": "entailment",
+      "pred": "entailment",
+      "letter_logits": {
+        "A": 21.375,
+        "B": 23.25,
+        "C": 21.875
+      }
+    },
+    {
+      "idx": 6,
+      "gold": "entailment",
+      "shortcut": "contradiction",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 18.0,
+        "B": 18.125,
+        "C": 26.625
+      }
+    },
+    {
+      "idx": 7,
+      "gold": "entailment",
+      "shortcut": "contradiction",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 27.375,
+        "B": 19.125,
+        "C": 19.125
+      }
+    },
+    {
+      "idx": 8,
+      "gold": "contradiction",
+      "shortcut": "entailment",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 24.75,
+        "B": 21.375,
+        "C": 20.875
+      }
+    },
+    {
+      "idx": 9,
+      "gold": "contradiction",
+      "shortcut": "entailment",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 19.25,
+        "B": 20.875,
+        "C": 21.875
+      }
+    },
+    {
+      "idx": 10,
+      "gold": "entailment",
+      "shortcut": "contradiction",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 26.875,
+        "B": 19.625,
+        "C": 20.25
+      }
+    },
+    {
+      "idx": 11,
+      "gold": "contradiction",
+      "shortcut": "entailment",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 22.125,
+        "B": 21.625,
+        "C": 24.0
+      }
+    },
+    {
+      "idx": 12,
+      "gold": "neutral",
+      "shortcut": "neutral",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 18.75,
+        "B": 18.125,
+        "C": 26.25
+      }
+    },
+    {
+      "idx": 13,
+      "gold": "entailment",
+      "shortcut": "contradiction",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 26.75,
+        "B": 17.75,
+        "C": 19.75
+      }
+    },
+    {
+      "idx": 14,
+      "gold": "contradiction",
+      "shortcut": "entailment",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 23.0,
+        "B": 24.875,
+        "C": 21.5
+      }
+    },
+    {
+      "idx": 15,
+      "gold": "neutral",
+      "shortcut": "neutral",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 25.375,
+        "B": 18.125,
+        "C": 20.875
+      }
+    },
+    {
+      "idx": 16,
+      "gold": "contradiction",
+      "shortcut": "entailment",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 20.75,
+        "B": 20.625,
+        "C": 25.375
+      }
+    },
+    {
+      "idx": 17,
+      "gold": "contradiction",
+      "shortcut": "entailment",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 23.125,
+        "B": 24.25,
+        "C": 21.875
+      }
+    },
+    {
+      "idx": 18,
+      "gold": "neutral",
+      "shortcut": "neutral",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 19.125,
+        "B": 24.875,
+        "C": 23.5
+      }
+    },
+    {
+      "idx": 19,
+      "gold": "neutral",
+      "shortcut": "neutral",
+      "pred": "neutral",
+      "letter_logits": {
+        "A": 24.625,
+        "B": 19.25,
+        "C": 22.5
+      }
+    }
+  ]
+}

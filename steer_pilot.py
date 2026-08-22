@@ -107,6 +107,9 @@ def main():
     ap.add_argument("--n", type=int, default=150)
     ap.add_argument("--positions", choices=["all", "last"], default="all")
     ap.add_argument("--no-4bit", action="store_true")
+    ap.add_argument("--random-dir", action="store_true",
+                    help="replace the CAA direction with a random unit vector")
+    ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--out", default="reports/steer_pilot.json")
     args = ap.parse_args()
 
@@ -122,7 +125,12 @@ def main():
         if not 1 <= layer <= len(model.model.layers):
             print("skipping layer %d, outside the steerable range" % layer)
             continue
-        unit = vectors[layer] / vectors[layer].norm().clamp_min(1e-8)
+        if args.random_dir:
+            g = torch.Generator().manual_seed(args.seed * 1000 + layer)
+            raw = torch.randn(vectors[layer].shape, generator=g)
+            unit = raw / raw.norm().clamp_min(1e-8)
+        else:
+            unit = vectors[layer] / vectors[layer].norm().clamp_min(1e-8)
         steerer = Steerer(model, layer, unit, positions=args.positions)
 
         # calibrate: mean residual norm at this layer, from a short unsteered pass

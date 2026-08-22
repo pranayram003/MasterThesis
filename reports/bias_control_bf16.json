@@ -1,0 +1,318 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "n": 150,
+  "sweep": [
+    {
+      "bias": -6.0,
+      "accuracy": 0.5666666666666667,
+      "ci95": [
+        0.4866784070665957,
+        0.6433254410473084
+      ],
+      "predicted": {
+        "contradiction": 131,
+        "entailment": 19
+      }
+    },
+    {
+      "bias": -5.5,
+      "accuracy": 0.5933333333333334,
+      "ci95": [
+        0.51334517440468,
+        0.6686602129547861
+      ],
+      "predicted": {
+        "contradiction": 127,
+        "entailment": 23
+      }
+    },
+    {
+      "bias": -5.0,
+      "accuracy": 0.6066666666666667,
+      "ci95": [
+        0.5267647239233271,
+        0.6812414330589196
+      ],
+      "predicted": {
+        "contradiction": 125,
+        "entailment": 25
+      }
+    },
+    {
+      "bias": -4.5,
+      "accuracy": 0.62,
+      "ci95": [
+        0.5402429290748867,
+        0.6937639975301408
+      ],
+      "predicted": {
+        "contradiction": 123,
+        "entailment": 27
+      }
+    },
+    {
+      "bias": -4.0,
+      "accuracy": 0.64,
+      "ci95": [
+        0.5605726755123628,
+        0.712435405526836
+      ],
+      "predicted": {
+        "contradiction": 120,
+        "entailment": 30
+      }
+    },
+    {
+      "bias": -3.5,
+      "accuracy": 0.6333333333333333,
+      "ci95": [
+        0.5537808929385404,
+        0.706226803289268
+      ],
+      "predicted": {
+        "contradiction": 119,
+        "entailment": 31
+      }
+    },
+    {
+      "bias": -3.0,
+      "accuracy": 0.6466666666666666,
+      "ci95": [
+        0.5673798898960487,
+        0.7186285759545403
+      ],
+      "predicted": {
+        "contradiction": 115,
+        "entailment": 35
+      }
+    },
+    {
+      "bias": -2.5,
+      "accuracy": 0.6266666666666667,
+      "ci95": [
+        0.5470043657114055,
+        0.7000029457050124
+      ],
+      "predicted": {
+        "contradiction": 110,
+        "entailment": 40
+      }
+    },
+    {
+      "bias": -2.0,
+      "accuracy": 0.6266666666666667,
+      "ci95": [
+        0.5470043657114055,
+        0.7000029457050124
+      ],
+      "predicted": {
+        "contradiction": 110,
+        "entailment": 40
+      }
+    },
+    {
+      "bias": -1.5,
+      "accuracy": 0.6133333333333333,
+      "ci95": [
+        0.5334964294452139,
+        0.6875101123484232
+      ],
+      "predicted": {
+        "contradiction": 104,
+        "entailment": 46
+      }
+    },
+    {
+      "bias": -1.0,
+      "accuracy": 0.6066666666666667,
+      "ci95": [
+        0.5267647239233271,
+        0.6812414330589196
+      ],
+      "predicted": {
+        "contradiction": 97,
+        "entailment": 53
+      }
+    },
+    {
+      "bias": -0.5,
+      "accuracy": 0.5933333333333334,
+      "ci95": [
+        0.51334517440468,
+        0.6686602129547861
+      ],
+      "predicted": {
+        "contradiction": 87,
+        "entailment": 63
+      }
+    },
+    {
+      "bias": 0.0,
+      "accuracy": 0.6066666666666667,
+      "ci95": [
+        0.5267647239233271,
+        0.6812414330589196
+      ],
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      }
+    },
+    {
+      "bias": 0.5,
+      "accuracy": 0.62,
+      "ci95": [
+        0.5402429290748867,
+        0.6937639975301408
+      ],
+      "predicted": {
+        "contradiction": 71,
+        "entailment": 79
+      }
+    },
+    {
+      "bias": 1.0,
+      "accuracy": 0.6266666666666667,
+      "ci95": [
+        0.5470043657114055,
+        0.7000029457050124
+      ],
+      "predicted": {
+        "contradiction": 60,
+        "entailment": 90
+      }
+    },
+    {
+      "bias": 1.5,
+      "accuracy": 0.6333333333333333,
+      "ci95": [
+        0.5537808929385404,
+        0.706226803289268
+      ],
+      "predicted": {
+        "contradiction": 49,
+        "entailment": 101
+      }
+    },
+    {
+      "bias": 2.0,
+      "accuracy": 0.6333333333333333,
+      "ci95": [
+        0.5537808929385404,
+        0.706226803289268
+      ],
+      "predicted": {
+        "entailment": 107,
+        "contradiction": 43
+      }
+    },
+    {
+      "bias": 2.5,
+      "accuracy": 0.64,
+      "ci95": [
+        0.5605726755123628,
+        0.712435405526836
+      ],
+      "predicted": {
+        "entailment": 116,
+        "contradiction": 34
+      }
+    },
+    {
+      "bias": 3.0,
+      "accuracy": 0.6333333333333333,
+      "ci95": [
+        0.5537808929385404,
+        0.706226803289268
+      ],
+      "predicted": {
+        "entailment": 121,
+        "contradiction": 29
+      }
+    },
+    {
+      "bias": 3.5,
+      "accuracy": 0.6133333333333333,
+      "ci95": [
+        0.5334964294452139,
+        0.6875101123484232
+      ],
+      "predicted": {
+        "entailment": 124,
+        "contradiction": 26
+      }
+    },
+    {
+      "bias": 4.0,
+      "accuracy": 0.5866666666666667,
+      "ci95": [
+        0.5066570942317348,
+        0.6623479083163406
+      ],
+      "predicted": {
+        "entailment": 132,
+        "contradiction": 18
+      }
+    },
+    {
+      "bias": 4.5,
+      "accuracy": 0.5933333333333334,
+      "ci95": [
+        0.51334517440468,
+        0.6686602129547861
+      ],
+      "predicted": {
+        "entailment": 137,
+        "contradiction": 13
+      }
+    },
+    {
+      "bias": 5.0,
+      "accuracy": 0.58,
+      "ci95": [
+        0.49998333511352705,
+        0.656021282623158
+      ],
+      "predicted": {
+        "entailment": 139,
+        "contradiction": 11
+      }
+    },
+    {
+      "bias": 5.5,
+      "accuracy": 0.5866666666666667,
+      "ci95": [
+        0.5066570942317348,
+        0.6623479083163406
+      ],
+      "predicted": {
+        "entailment": 142,
+        "contradiction": 8
+      }
+    },
+    {
+      "bias": 6.0,
+      "accuracy": 0.5933333333333334,
+      "ci95": [
+        0.51334517440468,
+        0.6686602129547861
+      ],
+      "predicted": {
+        "entailment": 145,
+        "contradiction": 5
+      }
+    }
+  ],
+  "best": {
+    "bias": -3.0,
+    "accuracy": 0.6466666666666666,
+    "ci95": [
+      0.5673798898960487,
+      0.7186285759545403
+    ],
+    "predicted": {
+      "contradiction": 115,
+      "entailment": 35
+    }
+  }
+}

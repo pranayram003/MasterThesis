@@ -43,7 +43,7 @@ def decoder_layers(model):
 def head_geometry(model):
     cfg = model.config
     n_heads = cfg.num_attention_heads
-    d_head = getattr(cfg, "head_dim", cfg.hidden_size // n_heads)
+    d_head = getattr(cfg, "head_dim", None) or cfg.hidden_size // n_heads
     return n_heads, d_head
 
 
