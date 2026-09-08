@@ -1,0 +1,310 @@
+{
+  "model": "/local/s4566319/hf/llama31-8b-instruct",
+  "n": 150,
+  "sweep": [
+    {
+      "bias": -6.0,
+      "accuracy": 0.44,
+      "ci95": [
+        0.3630436095097045,
+        0.5199529271877817
+      ],
+      "predicted": {
+        "contradiction": 150
+      }
+    },
+    {
+      "bias": -5.5,
+      "accuracy": 0.44,
+      "ci95": [
+        0.3630436095097045,
+        0.5199529271877817
+      ],
+      "predicted": {
+        "contradiction": 150
+      }
+    },
+    {
+      "bias": -5.0,
+      "accuracy": 0.44,
+      "ci95": [
+        0.3630436095097045,
+        0.5199529271877817
+      ],
+      "predicted": {
+        "contradiction": 150
+      }
+    },
+    {
+      "bias": -4.5,
+      "accuracy": 0.44,
+      "ci95": [
+        0.3630436095097045,
+        0.5199529271877817
+      ],
+      "predicted": {
+        "contradiction": 150
+      }
+    },
+    {
+      "bias": -4.0,
+      "accuracy": 0.44,
+      "ci95": [
+        0.3630436095097045,
+        0.5199529271877817
+      ],
+      "predicted": {
+        "contradiction": 150
+      }
+    },
+    {
+      "bias": -3.5,
+      "accuracy": 0.44,
+      "ci95": [
+        0.3630436095097045,
+        0.5199529271877817
+      ],
+      "predicted": {
+        "contradiction": 150
+      }
+    },
+    {
+      "bias": -3.0,
+      "accuracy": 0.44,
+      "ci95": [
+        0.3630436095097045,
+        0.5199529271877817
+      ],
+      "predicted": {
+        "contradiction": 150
+      }
+    },
+    {
+      "bias": -2.5,
+      "accuracy": 0.44,
+      "ci95": [
+        0.3630436095097045,
+        0.5199529271877817
+      ],
+      "predicted": {
+        "contradiction": 150
+      }
+    },
+    {
+      "bias": -2.0,
+      "accuracy": 0.44666666666666666,
+      "ci95": [
+        0.3694266500084245,
+        0.5265702715004521
+      ],
+      "predicted": {
+        "contradiction": 149,
+        "entailment": 1
+      }
+    },
+    {
+      "bias": -1.5,
+      "accuracy": 0.46,
+      "ci95": [
+        0.38223445858630034,
+        0.5397632325453572
+      ],
+      "predicted": {
+        "contradiction": 145,
+        "entailment": 5
+      }
+    },
+    {
+      "bias": -1.0,
+      "accuracy": 0.5333333333333333,
+      "ci95": [
+        0.45366104879756924,
+        0.611340875259383
+      ],
+      "predicted": {
+        "contradiction": 134,
+        "entailment": 16
+      }
+    },
+    {
+      "bias": -0.5,
+      "accuracy": 0.6666666666666666,
+      "ci95": [
+        0.5878960768592673,
+        0.7371135434254931
+      ],
+      "predicted": {
+        "contradiction": 108,
+        "entailment": 42
+      }
+    },
+    {
+      "bias": 0.0,
+      "accuracy": 0.7666666666666667,
+      "ci95": [
+        0.6928407309593593,
+        0.8271746614962575
+      ],
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      }
+    },
+    {
+      "bias": 0.5,
+      "accuracy": 0.82,
+      "ci95": [
+        0.7507753195800668,
+        0.8732431513666732
+      ],
+      "predicted": {
+        "contradiction": 61,
+        "entailment": 89
+      }
+    },
+    {
+      "bias": 1.0,
+      "accuracy": 0.82,
+      "ci95": [
+        0.7507753195800668,
+        0.8732431513666732
+      ],
+      "predicted": {
+        "contradiction": 47,
+        "entailment": 103
+      }
+    },
+    {
+      "bias": 1.5,
+      "accuracy": 0.8066666666666666,
+      "ci95": [
+        0.7361357242542107,
+        0.8618819770697485
+      ],
+      "predicted": {
+        "contradiction": 39,
+        "entailment": 111
+      }
+    },
+    {
+      "bias": 2.0,
+      "accuracy": 0.7733333333333333,
+      "ci95": [
+        0.6999966119167443,
+        0.8330191653502627
+      ],
+      "predicted": {
+        "contradiction": 32,
+        "entailment": 118
+      }
+    },
+    {
+      "bias": 2.5,
+      "accuracy": 0.7333333333333333,
+      "ci95": [
+        0.6573840257093969,
+        0.7976294426892675
+      ],
+      "predicted": {
+        "contradiction": 26,
+        "entailment": 124
+      }
+    },
+    {
+      "bias": 3.0,
+      "accuracy": 0.72,
+      "ci95": [
+        0.6433420194970179,
+        0.7856706792788659
+      ],
+      "predicted": {
+        "contradiction": 24,
+        "entailment": 126
+      }
+    },
+    {
+      "bias": 3.5,
+      "accuracy": 0.68,
+      "ci95": [
+        0.6016545135045653,
+        0.7493558764029761
+      ],
+      "predicted": {
+        "contradiction": 18,
+        "entailment": 132
+      }
+    },
+    {
+      "bias": 4.0,
+      "accuracy": 0.6333333333333333,
+      "ci95": [
+        0.5537808929385404,
+        0.706226803289268
+      ],
+      "predicted": {
+        "contradiction": 11,
+        "entailment": 139
+      }
+    },
+    {
+      "bias": 4.5,
+      "accuracy": 0.6066666666666667,
+      "ci95": [
+        0.5267647239233271,
+        0.6812414330589196
+      ],
+      "predicted": {
+        "entailment": 143,
+        "contradiction": 7
+      }
+    },
+    {
+      "bias": 5.0,
+      "accuracy": 0.6,
+      "ci95": [
+        0.5200476798506317,
+        0.6749580923202245
+      ],
+      "predicted": {
+        "entailment": 144,
+        "contradiction": 6
+      }
+    },
+    {
+      "bias": 5.5,
+      "accuracy": 0.5933333333333334,
+      "ci95": [
+        0.51334517440468,
+        0.6686602129547861
+      ],
+      "predicted": {
+        "entailment": 145,
+        "contradiction": 5
+      }
+    },
+    {
+      "bias": 6.0,
+      "accuracy": 0.5733333333333334,
+      "ci95": [
+        0.49332380166580925,
+        0.6496804312594855
+      ],
+      "predicted": {
+        "entailment": 148,
+        "contradiction": 2
+      }
+    }
+  ],
+  "best": {
+    "bias": 0.5,
+    "accuracy": 0.82,
+    "ci95": [
+      0.7507753195800668,
+      0.8732431513666732
+    ],
+    "predicted": {
+      "contradiction": 61,
+      "entailment": 89
+    }
+  }
+}

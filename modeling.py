@@ -82,20 +82,20 @@ class HeadOutputCapture:
         self.handles = []
 
 
-def letter_token_ids(tokenizer, letters=("A", "B", "C")):
+def letter_token_ids(tokenizer, letters=("A", "B", "C"), context="Answer: ("):
     """
     Token id of each answer letter as it appears directly after "(".
     Encoding the letter in context avoids the leading-space tokenisation trap.
     """
     ids = {}
     for letter in letters:
-        with_paren = tokenizer.encode("(" + letter, add_special_tokens=False)
-        only_paren = tokenizer.encode("(", add_special_tokens=False)
+        with_paren = tokenizer.encode(context + letter, add_special_tokens=False)
+        only_paren = tokenizer.encode(context, add_special_tokens=False)
         tail = with_paren[len(only_paren):]
         if len(tail) != 1:
             raise ValueError(
-                "letter %r does not tokenise to a single token after '(' : %r"
-                % (letter, tail)
+                "letter %r does not tokenise to a single token after %r : %r"
+                % (letter, context, tail)
             )
         ids[letter] = tail[0]
     return ids

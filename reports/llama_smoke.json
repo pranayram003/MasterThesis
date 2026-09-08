@@ -1,0 +1,339 @@
+{
+  "summary": {
+    "negated": {
+      "n": 20,
+      "accuracy": 0.8,
+      "ci95": [
+        0.5839782779742401,
+        0.9193436467288
+      ],
+      "predicted": {
+        "contradiction": 11,
+        "entailment": 9
+      },
+      "by_premise_length": {
+        "long 9-12": {
+          "accuracy": 0.6666666666666666,
+          "n": 9
+        },
+        "mid 5-8": {
+          "accuracy": 1.0,
+          "n": 7
+        },
+        "short 2-4": {
+          "accuracy": 0.75,
+          "n": 4
+        }
+      }
+    },
+    "unnegated": {
+      "n": 20,
+      "accuracy": 0.8,
+      "ci95": [
+        0.5839782779742401,
+        0.9193436467288
+      ],
+      "predicted": {
+        "contradiction": 13,
+        "entailment": 7
+      },
+      "by_premise_length": {
+        "long 9-12": {
+          "accuracy": 1.0,
+          "n": 9
+        },
+        "mid 5-8": {
+          "accuracy": 0.7142857142857143,
+          "n": 7
+        },
+        "short 2-4": {
+          "accuracy": 0.5,
+          "n": 4
+        }
+      }
+    }
+  },
+  "gap": 0.0,
+  "per_item": [
+    {
+      "idx": 0,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 4
+    },
+    {
+      "idx": 2,
+      "condition": "negated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 3
+    },
+    {
+      "idx": 3,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 12
+    },
+    {
+      "idx": 4,
+      "condition": "negated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 7
+    },
+    {
+      "idx": 5,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 11
+    },
+    {
+      "idx": 6,
+      "condition": "negated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 11
+    },
+    {
+      "idx": 7,
+      "condition": "negated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 11
+    },
+    {
+      "idx": 8,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "entailment",
+      "clauses": 9
+    },
+    {
+      "idx": 9,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 4
+    },
+    {
+      "idx": 10,
+      "condition": "negated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 8
+    },
+    {
+      "idx": 11,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 5
+    },
+    {
+      "idx": 13,
+      "condition": "negated",
+      "correct": "entailment",
+      "pred": "contradiction",
+      "clauses": 12
+    },
+    {
+      "idx": 14,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 7
+    },
+    {
+      "idx": 16,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 11
+    },
+    {
+      "idx": 17,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 10
+    },
+    {
+      "idx": 22,
+      "condition": "negated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 8
+    },
+    {
+      "idx": 23,
+      "condition": "negated",
+      "correct": "entailment",
+      "pred": "contradiction",
+      "clauses": 4
+    },
+    {
+      "idx": 24,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 5
+    },
+    {
+      "idx": 26,
+      "condition": "negated",
+      "correct": "contradiction",
+      "pred": "entailment",
+      "clauses": 9
+    },
+    {
+      "idx": 27,
+      "condition": "negated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 7
+    },
+    {
+      "idx": 0,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "contradiction",
+      "clauses": 4
+    },
+    {
+      "idx": 2,
+      "condition": "unnegated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 3
+    },
+    {
+      "idx": 3,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 12
+    },
+    {
+      "idx": 4,
+      "condition": "unnegated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 7
+    },
+    {
+      "idx": 5,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 11
+    },
+    {
+      "idx": 6,
+      "condition": "unnegated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 11
+    },
+    {
+      "idx": 7,
+      "condition": "unnegated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 11
+    },
+    {
+      "idx": 8,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 9
+    },
+    {
+      "idx": 9,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "contradiction",
+      "clauses": 4
+    },
+    {
+      "idx": 10,
+      "condition": "unnegated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 8
+    },
+    {
+      "idx": 11,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "contradiction",
+      "clauses": 5
+    },
+    {
+      "idx": 13,
+      "condition": "unnegated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 12
+    },
+    {
+      "idx": 14,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 7
+    },
+    {
+      "idx": 16,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 11
+    },
+    {
+      "idx": 17,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 10
+    },
+    {
+      "idx": 22,
+      "condition": "unnegated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 8
+    },
+    {
+      "idx": 23,
+      "condition": "unnegated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 4
+    },
+    {
+      "idx": 24,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "contradiction",
+      "clauses": 5
+    },
+    {
+      "idx": 26,
+      "condition": "unnegated",
+      "correct": "entailment",
+      "pred": "entailment",
+      "clauses": 9
+    },
+    {
+      "idx": 27,
+      "condition": "unnegated",
+      "correct": "contradiction",
+      "pred": "contradiction",
+      "clauses": 7
+    }
+  ]
+}
