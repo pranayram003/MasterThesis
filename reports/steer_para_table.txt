@@ -1,0 +1,36 @@
+
+data/para_never.jsonl  (variant never, n=200)
+  layer 18   rows=7
+    -0.40  acc=0.605  bal=0.551  ent=1.000 con=0.102  preds={'entailment': 191, 'contradiction': 9}
+    -0.20  acc=0.620  bal=0.571  ent=0.982 con=0.159  preds={'entailment': 184, 'contradiction': 16}
+    -0.10  acc=0.585  bal=0.547  ent=0.866 con=0.227  preds={'entailment': 165, 'contradiction': 35}
+    +0.00  acc=0.475  bal=0.453  ent=0.634 con=0.273  preds={'entailment': 135, 'contradiction': 65}
+    +0.10  acc=0.430  bal=0.425  ent=0.464 con=0.386  preds={'entailment': 106, 'contradiction': 94}
+    +0.20  acc=0.415  bal=0.413  ent=0.429 con=0.398  preds={'entailment': 101, 'contradiction': 99}
+    +0.40  acc=0.410  bal=0.407  ent=0.429 con=0.386  preds={'entailment': 102, 'contradiction': 98}
+  layer 22   rows=7
+    -0.40  acc=0.675  bal=0.642  ent=0.920 con=0.364  preds={'contradiction': 41, 'entailment': 159}
+    -0.20  acc=0.605  bal=0.577  ent=0.812 con=0.341  preds={'entailment': 149, 'contradiction': 51}
+    -0.10  acc=0.565  bal=0.540  ent=0.750 con=0.330  preds={'entailment': 143, 'contradiction': 57}
+    +0.00  acc=0.475  bal=0.453  ent=0.634 con=0.273  preds={'entailment': 135, 'contradiction': 65}
+    +0.10  acc=0.445  bal=0.429  ent=0.562 con=0.295  preds={'entailment': 125, 'contradiction': 75}
+    +0.20  acc=0.430  bal=0.417  ent=0.527 con=0.307  preds={'entailment': 120, 'contradiction': 80}
+    +0.40  acc=0.410  bal=0.403  ent=0.464 con=0.341  preds={'entailment': 110, 'contradiction': 90}
+
+data/para_not_been.jsonl  (variant not_been, n=200)
+  layer 18   rows=7
+    -0.40  acc=0.765  bal=0.733  ent=1.000 con=0.466  preds={'contradiction': 41, 'entailment': 159}
+    -0.20  acc=0.775  bal=0.746  ent=0.991 con=0.500  preds={'contradiction': 45, 'entailment': 155}
+    -0.10  acc=0.825  bal=0.805  ent=0.973 con=0.636  preds={'contradiction': 59, 'entailment': 141}
+    +0.00  acc=0.760  bal=0.755  ent=0.795 con=0.716  preds={'contradiction': 86, 'entailment': 114}
+    +0.10  acc=0.635  bal=0.650  ent=0.527 con=0.773  preds={'contradiction': 121, 'entailment': 79}
+    +0.20  acc=0.600  bal=0.622  ent=0.438 con=0.807  preds={'contradiction': 134, 'entailment': 66}
+    +0.40  acc=0.530  bal=0.544  ent=0.429 con=0.659  preds={'contradiction': 122, 'entailment': 78}
+  layer 22   rows=7
+    -0.40  acc=0.855  bal=0.839  ent=0.973 con=0.705  preds={'contradiction': 65, 'entailment': 135}
+    -0.20  acc=0.840  bal=0.827  ent=0.938 con=0.716  preds={'contradiction': 70, 'entailment': 130}
+    -0.10  acc=0.815  bal=0.809  ent=0.857 con=0.761  preds={'contradiction': 83, 'entailment': 117}
+    +0.00  acc=0.760  bal=0.755  ent=0.795 con=0.716  preds={'contradiction': 86, 'entailment': 114}
+    +0.10  acc=0.735  bal=0.733  ent=0.750 con=0.716  preds={'contradiction': 91, 'entailment': 109}
+    +0.20  acc=0.680  bal=0.681  ent=0.670 con=0.693  preds={'contradiction': 98, 'entailment': 102}
+    +0.40  acc=0.575  bal=0.588  ent=0.482 con=0.693  preds={'contradiction': 119, 'entailment': 81}
