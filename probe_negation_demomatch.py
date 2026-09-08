@@ -100,9 +100,12 @@ def block(premise, hypothesis, order, answer_label=None):
     return "\n".join(lines)
 
 
-def pick_demos(train_items, condition, seed=7):
+DEMO_SEED = {"value": 7}
+
+
+def pick_demos(train_items, condition, seed=None):
     """Two demonstrations, one per label, answers on different letters."""
-    rng = random.Random(seed)
+    rng = random.Random(DEMO_SEED["value"] if seed is None else seed)
     pool = collections.defaultdict(list)
     for item in train_items:
         if item["diagnostic"]:
@@ -168,11 +171,13 @@ def main():
     ap.add_argument("--items", default="data/eval_val.jsonl")
     ap.add_argument("--train", default="data/eval_train.jsonl")
     ap.add_argument("--n", type=int, default=200)
+    ap.add_argument("--demo-seed", type=int, default=7)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-4bit", action="store_true")
     ap.add_argument("--out", default="reports/negation_probe.json")
     args = ap.parse_args()
 
+    DEMO_SEED["value"] = args.demo_seed
     items = [i for i in read_jsonl(args.items) if i["diagnostic"]][: args.n]
     train_items = read_jsonl(args.train)
     if items and items[0].get("variant"):
