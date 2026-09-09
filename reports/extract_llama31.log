@@ -1,0 +1,57 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.44s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.46s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.44s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.00it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.16s/it]
+100/1992  4.9 items/s  used=100 skipped=0
+200/1992  4.8 items/s  used=200 skipped=0
+300/1992  4.8 items/s  used=300 skipped=0
+400/1992  4.7 items/s  used=400 skipped=0
+500/1992  4.7 items/s  used=500 skipped=0
+600/1992  4.7 items/s  used=600 skipped=0
+700/1992  4.7 items/s  used=700 skipped=0
+800/1992  4.7 items/s  used=800 skipped=0
+900/1992  4.6 items/s  used=900 skipped=0
+1000/1992  4.6 items/s  used=1000 skipped=0
+1100/1992  4.6 items/s  used=1100 skipped=0
+1200/1992  4.6 items/s  used=1200 skipped=0
+1300/1992  4.6 items/s  used=1300 skipped=0
+1400/1992  4.6 items/s  used=1400 skipped=0
+1500/1992  4.6 items/s  used=1500 skipped=0
+1600/1992  4.6 items/s  used=1600 skipped=0
+1700/1992  4.6 items/s  used=1700 skipped=0
+1800/1992  4.6 items/s  used=1800 skipped=0
+1900/1992  4.6 items/s  used=1900 skipped=0
+
+saved vectors/llama31_bf16.pt
+items used: 1992 skipped: 0
+layer  0  ||v|| = 0.009
+layer  1  ||v|| = 0.015
+layer  2  ||v|| = 0.017
+layer  3  ||v|| = 0.022
+layer  4  ||v|| = 0.030
+layer  5  ||v|| = 0.035
+layer  6  ||v|| = 0.040
+layer  7  ||v|| = 0.043
+layer  8  ||v|| = 0.050
+layer  9  ||v|| = 0.072
+layer 10  ||v|| = 0.095
+layer 11  ||v|| = 0.126
+layer 12  ||v|| = 0.154
+layer 13  ||v|| = 0.256
+layer 14  ||v|| = 0.421
+layer 15  ||v|| = 0.523
+layer 16  ||v|| = 0.648
+layer 17  ||v|| = 0.729
+layer 18  ||v|| = 0.769
+layer 19  ||v|| = 0.855
+layer 20  ||v|| = 0.869
+layer 21  ||v|| = 0.930
+layer 22  ||v|| = 1.105
+layer 23  ||v|| = 1.174
+layer 24  ||v|| = 1.235
+layer 25  ||v|| = 1.300
+layer 26  ||v|| = 1.399
+layer 27  ||v|| = 1.476
+layer 28  ||v|| = 1.615
+layer 29  ||v|| = 1.718
+layer 30  ||v|| = 2.594
+layer 31  ||v|| = 3.081
+layer 32  ||v|| = 8.611
+{"model": "/local/s4566319/hf/llama31-8b-instruct", "n_items": 1992}
