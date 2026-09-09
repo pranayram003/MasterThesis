@@ -33,7 +33,7 @@ import os
 import torch
 
 from modeling import letter_token_ids, load_model
-from prompts import option_order, read_jsonl, render
+from prompts import DEMO_SEED, option_order, read_jsonl, render
 
 COEFFS = [-0.4, -0.2, -0.1, 0.0, 0.1, 0.2, 0.4]
 
@@ -110,9 +110,11 @@ def main():
     ap.add_argument("--random-dir", action="store_true",
                     help="replace the CAA direction with a random unit vector")
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--demo-seed", type=int, default=7)
     ap.add_argument("--out", default="reports/steer_pilot.json")
     args = ap.parse_args()
 
+    DEMO_SEED["value"] = args.demo_seed
     payload = torch.load(args.vectors, map_location="cpu")
     vectors = payload["resid_diff"]
 

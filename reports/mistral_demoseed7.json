@@ -1,0 +1,200 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "vectors": "vectors/mistral_bf16.pt",
+  "n": 150,
+  "positions": "all",
+  "results": {
+    "18": {
+      "scale": 6.3376627445220945,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -2.535065097808838,
+          "accuracy": 0.74,
+          "ci95": [
+            0.6644342013432283,
+            0.8035796518668268
+          ],
+          "predicted": {
+            "contradiction": 35,
+            "entailment": 115
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -1.267532548904419,
+          "accuracy": 0.72,
+          "ci95": [
+            0.6433420194970179,
+            0.7856706792788659
+          ],
+          "predicted": {
+            "contradiction": 36,
+            "entailment": 114
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.6337662744522095,
+          "accuracy": 0.7133333333333334,
+          "ci95": [
+            0.6363493407951355,
+            0.7796629731693578
+          ],
+          "predicted": {
+            "contradiction": 51,
+            "entailment": 99
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.6337662744522095,
+          "accuracy": 0.5533333333333333,
+          "ci95": [
+            0.4734297284995479,
+            0.6305733499915755
+          ],
+          "predicted": {
+            "contradiction": 91,
+            "entailment": 59
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 1.267532548904419,
+          "accuracy": 0.52,
+          "ci95": [
+            0.4405509365979702,
+            0.5984502178362011
+          ],
+          "predicted": {
+            "contradiction": 94,
+            "entailment": 56
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 2.535065097808838,
+          "accuracy": 0.4533333333333333,
+          "ci95": [
+            0.37582361795320735,
+            0.5331736883670597
+          ],
+          "predicted": {
+            "entailment": 66,
+            "contradiction": 84
+          }
+        }
+      ]
+    },
+    "22": {
+      "scale": 9.492152214050293,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -3.7968608856201174,
+          "accuracy": 0.76,
+          "ci95": [
+            0.6857071477257108,
+            0.8213078599185155
+          ],
+          "predicted": {
+            "contradiction": 52,
+            "entailment": 98
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -1.8984304428100587,
+          "accuracy": 0.7,
+          "ci95": [
+            0.6224187104297283,
+            0.7675928339119842
+          ],
+          "predicted": {
+            "contradiction": 67,
+            "entailment": 83
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.9492152214050293,
+          "accuracy": 0.64,
+          "ci95": [
+            0.5605726755123628,
+            0.712435405526836
+          ],
+          "predicted": {
+            "contradiction": 70,
+            "entailment": 80
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.9492152214050293,
+          "accuracy": 0.5866666666666667,
+          "ci95": [
+            0.5066570942317348,
+            0.6623479083163406
+          ],
+          "predicted": {
+            "contradiction": 84,
+            "entailment": 66
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 1.8984304428100587,
+          "accuracy": 0.54,
+          "ci95": [
+            0.46023676745464287,
+            0.6177655414136997
+          ],
+          "predicted": {
+            "contradiction": 87,
+            "entailment": 63
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 3.7968608856201174,
+          "accuracy": 0.5066666666666667,
+          "ci95": [
+            0.42749574524160977,
+            0.5855046395697807
+          ],
+          "predicted": {
+            "contradiction": 88,
+            "entailment": 62
+          }
+        }
+      ]
+    }
+  }
+}

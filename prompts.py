@@ -49,12 +49,16 @@ def _block(premise, hypothesis, order, answer_label=None):
     return "\n".join(lines)
 
 
-def demos(train_path, seed=7):
+DEMO_SEED = {"value": 7}
+
+
+def demos(train_path, seed=None):
     """
     Two demonstrations drawn from train.jsonl, one per label, with the answer on
     a different letter in each. Train uses country names and evaluation uses US
     place names with almost no overlap, so the demonstrations cannot leak.
     """
+    seed = DEMO_SEED["value"] if seed is None else seed
     key = (train_path, seed)
     if key in _DEMO_CACHE:
         return _DEMO_CACHE[key]
