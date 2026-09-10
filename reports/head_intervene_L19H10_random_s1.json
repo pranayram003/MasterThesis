@@ -1,0 +1,136 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "head": [
+    19,
+    10
+  ],
+  "direction": "random",
+  "items": "data/para_orig.jsonl",
+  "n": 400,
+  "demo_seed": 7,
+  "results": {
+    "baseline": 0.63,
+    "head_norm": 3.9973607403039932,
+    "add": [
+      {
+        "fraction": -1.0,
+        "accuracy": 0.6475,
+        "delta": 0.01749999999999996,
+        "ci95": [
+          0.5994796194705074,
+          0.6927141515525868
+        ],
+        "predicted": {
+          "contradiction": 193,
+          "entailment": 207
+        },
+        "by_gold": {
+          "contradiction": 0.63,
+          "entailment": 0.665
+        }
+      },
+      {
+        "fraction": -0.5,
+        "accuracy": 0.6425,
+        "delta": 0.012499999999999956,
+        "ci95": [
+          0.5943808773044147,
+          0.6879080201246762
+        ],
+        "predicted": {
+          "contradiction": 191,
+          "entailment": 209
+        },
+        "by_gold": {
+          "contradiction": 0.62,
+          "entailment": 0.665
+        }
+      },
+      {
+        "fraction": -0.25,
+        "accuracy": 0.6325,
+        "delta": 0.0024999999999999467,
+        "ci95": [
+          0.5841997778817278,
+          0.6782793723593568
+        ],
+        "predicted": {
+          "contradiction": 191,
+          "entailment": 209
+        },
+        "by_gold": {
+          "contradiction": 0.61,
+          "entailment": 0.655
+        }
+      },
+      {
+        "fraction": 0.0,
+        "accuracy": 0.63,
+        "delta": 0.0,
+        "ci95": [
+          0.5816578813462162,
+          0.6758688320978669
+        ],
+        "predicted": {
+          "contradiction": 190,
+          "entailment": 210
+        },
+        "by_gold": {
+          "contradiction": 0.605,
+          "entailment": 0.655
+        }
+      },
+      {
+        "fraction": 0.25,
+        "accuracy": 0.63,
+        "delta": 0.0,
+        "ci95": [
+          0.5816578813462162,
+          0.6758688320978669
+        ],
+        "predicted": {
+          "contradiction": 190,
+          "entailment": 210
+        },
+        "by_gold": {
+          "contradiction": 0.605,
+          "entailment": 0.655
+        }
+      },
+      {
+        "fraction": 0.5,
+        "accuracy": 0.6275,
+        "delta": -0.0025000000000000577,
+        "ci95": [
+          0.5791173246752144,
+          0.673456951971867
+        ],
+        "predicted": {
+          "contradiction": 191,
+          "entailment": 209
+        },
+        "by_gold": {
+          "contradiction": 0.605,
+          "entailment": 0.65
+        }
+      },
+      {
+        "fraction": 1.0,
+        "accuracy": 0.635,
+        "delta": 0.0050000000000000044,
+        "ci95": [
+          0.5867430199020135,
+          0.6806885671360728
+        ],
+        "predicted": {
+          "contradiction": 194,
+          "entailment": 206
+        },
+        "by_gold": {
+          "contradiction": 0.62,
+          "entailment": 0.65
+        }
+      }
+    ]
+  }
+}
