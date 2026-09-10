@@ -1,0 +1,182 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "items": "data/para_orig.jsonl",
+  "n": 400,
+  "condition": "unnegated",
+  "band": [
+    17,
+    19
+  ],
+  "baseline": 0.9975,
+  "demo_seed": 7,
+  "rows": [
+    {
+      "layer": 17,
+      "head": 21,
+      "accuracy": 0.995,
+      "delta": -0.0025000000000000577,
+      "predicted": {
+        "entailment": 200,
+        "contradiction": 200
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 0.995
+      }
+    },
+    {
+      "layer": 18,
+      "head": 10,
+      "accuracy": 0.995,
+      "delta": -0.0025000000000000577,
+      "predicted": {
+        "entailment": 200,
+        "contradiction": 200
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 0.995
+      }
+    },
+    {
+      "layer": 17,
+      "head": 10,
+      "accuracy": 0.9975,
+      "delta": 0.0,
+      "predicted": {
+        "entailment": 199,
+        "contradiction": 201
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 1.0
+      }
+    },
+    {
+      "layer": 17,
+      "head": 2,
+      "accuracy": 0.9975,
+      "delta": 0.0,
+      "predicted": {
+        "entailment": 199,
+        "contradiction": 201
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 1.0
+      }
+    },
+    {
+      "layer": 17,
+      "head": 19,
+      "accuracy": 0.9975,
+      "delta": 0.0,
+      "predicted": {
+        "entailment": 199,
+        "contradiction": 201
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 1.0
+      }
+    },
+    {
+      "layer": 18,
+      "head": 2,
+      "accuracy": 0.9975,
+      "delta": 0.0,
+      "predicted": {
+        "entailment": 199,
+        "contradiction": 201
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 1.0
+      }
+    },
+    {
+      "layer": 18,
+      "head": 21,
+      "accuracy": 0.9975,
+      "delta": 0.0,
+      "predicted": {
+        "entailment": 199,
+        "contradiction": 201
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 1.0
+      }
+    },
+    {
+      "layer": 18,
+      "head": 19,
+      "accuracy": 0.9975,
+      "delta": 0.0,
+      "predicted": {
+        "entailment": 199,
+        "contradiction": 201
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 1.0
+      }
+    },
+    {
+      "layer": 19,
+      "head": 10,
+      "accuracy": 0.9975,
+      "delta": 0.0,
+      "predicted": {
+        "entailment": 199,
+        "contradiction": 201
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 1.0
+      }
+    },
+    {
+      "layer": 19,
+      "head": 2,
+      "accuracy": 0.9975,
+      "delta": 0.0,
+      "predicted": {
+        "entailment": 199,
+        "contradiction": 201
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 1.0
+      }
+    },
+    {
+      "layer": 19,
+      "head": 21,
+      "accuracy": 0.9975,
+      "delta": 0.0,
+      "predicted": {
+        "entailment": 199,
+        "contradiction": 201
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 1.0
+      }
+    },
+    {
+      "layer": 19,
+      "head": 19,
+      "accuracy": 0.9975,
+      "delta": 0.0,
+      "predicted": {
+        "entailment": 199,
+        "contradiction": 201
+      },
+      "by_gold": {
+        "entailment": 0.995,
+        "contradiction": 1.0
+      }
+    }
+  ]
+}

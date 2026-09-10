@@ -33,10 +33,26 @@ import math
 import os
 import time
 
+import re
+
 import torch
 
 from modeling import head_geometry, letter_token_ids, load_model
 from prompts import option_order, read_jsonl, render
+
+
+NEGATED = re.compile(r"^(?P<name>.+?) didn'?t visit (?P<place>.+?)$")
+
+
+def as_unnegated(item):
+    """Same premise, affirmative hypothesis, correct answer is shortcut_label."""
+    m = NEGATED.match(item.get("orig_hypothesis", item["hypothesis"]))
+    if not m:
+        return None
+    out = dict(item)
+    out["hypothesis"] = "%s visited %s" % (m.group("name"), m.group("place"))
+    out["gold_label"] = item["shortcut_label"]
+    return out
 
 
 def wilson(hits, n):
@@ -128,6 +144,9 @@ def main():
     ap.add_argument("--calib", type=int, default=32,
                     help="items used to estimate the per-head means")
     ap.add_argument("--demo-seed", type=int, default=7)
+    ap.add_argument("--condition", choices=["negated", "unnegated"],
+                    default="negated",
+                    help="unnegated is the control: same premises, no negation")
     ap.add_argument("--quantize", action="store_true")
     ap.add_argument("--out", default="reports/ablate_heads.json")
     args = ap.parse_args()
@@ -136,6 +155,9 @@ def main():
     DEMO_SEED["value"] = args.demo_seed
 
     items = read_jsonl(args.items)[: args.n]
+    if args.condition == "unnegated":
+        items = [x for x in (as_unnegated(i) for i in items) if x is not None]
+        print("control condition: %d unnegated items" % len(items))
     model, tokenizer = load_model(args.model, load_in_4bit=args.quantize)
     ids = letter_token_ids(tokenizer, letters=("A", "B"))
     n_heads, d_head = head_geometry(model)
@@ -194,6 +216,7 @@ def main():
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     with open(args.out, "w") as fh:
         json.dump({"model": args.model, "items": args.items, "n": len(items),
+                   "condition": args.condition,
                    "band": [lo, hi], "baseline": base_acc,
                    "demo_seed": args.demo_seed, "rows": rows}, fh, indent=2)
     print("\nwrote", args.out)
