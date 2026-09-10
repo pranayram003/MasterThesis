@@ -1,0 +1,41 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "items": "data/para_orig.jsonl",
+  "n": 40,
+  "band": [
+    18,
+    18
+  ],
+  "baseline": 0.675,
+  "demo_seed": 7,
+  "rows": [
+    {
+      "layer": 18,
+      "head": 10,
+      "accuracy": 0.625,
+      "delta": -0.050000000000000044,
+      "predicted": {
+        "contradiction": 24,
+        "entailment": 16
+      },
+      "by_gold": {
+        "contradiction": 0.7368421052631579,
+        "entailment": 0.5238095238095238
+      }
+    },
+    {
+      "layer": 18,
+      "head": 3,
+      "accuracy": 0.65,
+      "delta": -0.025000000000000022,
+      "predicted": {
+        "contradiction": 23,
+        "entailment": 17
+      },
+      "by_gold": {
+        "contradiction": 0.7368421052631579,
+        "entailment": 0.5714285714285714
+      }
+    }
+  ]
+}

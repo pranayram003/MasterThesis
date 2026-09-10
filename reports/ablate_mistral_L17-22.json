@@ -1,0 +1,2701 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "items": "data/para_orig.jsonl",
+  "n": 150,
+  "band": [
+    17,
+    22
+  ],
+  "baseline": 0.6066666666666667,
+  "demo_seed": 7,
+  "rows": [
+    {
+      "layer": 19,
+      "head": 8,
+      "accuracy": 0.4866666666666667,
+      "delta": -0.12,
+      "predicted": {
+        "entailment": 65,
+        "contradiction": 85
+      },
+      "by_gold": {
+        "contradiction": 0.5606060606060606,
+        "entailment": 0.42857142857142855
+      }
+    },
+    {
+      "layer": 18,
+      "head": 9,
+      "accuracy": 0.5333333333333333,
+      "delta": -0.07333333333333336,
+      "predicted": {
+        "contradiction": 90,
+        "entailment": 60
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.44047619047619047
+      }
+    },
+    {
+      "layer": 17,
+      "head": 24,
+      "accuracy": 0.5533333333333333,
+      "delta": -0.053333333333333344,
+      "predicted": {
+        "contradiction": 85,
+        "entailment": 65
+      },
+      "by_gold": {
+        "contradiction": 0.6363636363636364,
+        "entailment": 0.4880952380952381
+      }
+    },
+    {
+      "layer": 17,
+      "head": 27,
+      "accuracy": 0.5533333333333333,
+      "delta": -0.053333333333333344,
+      "predicted": {
+        "contradiction": 89,
+        "entailment": 61
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.4642857142857143
+      }
+    },
+    {
+      "layer": 17,
+      "head": 26,
+      "accuracy": 0.56,
+      "delta": -0.046666666666666634,
+      "predicted": {
+        "contradiction": 90,
+        "entailment": 60
+      },
+      "by_gold": {
+        "contradiction": 0.6818181818181818,
+        "entailment": 0.4642857142857143
+      }
+    },
+    {
+      "layer": 18,
+      "head": 31,
+      "accuracy": 0.56,
+      "delta": -0.046666666666666634,
+      "predicted": {
+        "contradiction": 90,
+        "entailment": 60
+      },
+      "by_gold": {
+        "contradiction": 0.6818181818181818,
+        "entailment": 0.4642857142857143
+      }
+    },
+    {
+      "layer": 20,
+      "head": 21,
+      "accuracy": 0.56,
+      "delta": -0.046666666666666634,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6060606060606061,
+        "entailment": 0.5238095238095238
+      }
+    },
+    {
+      "layer": 21,
+      "head": 11,
+      "accuracy": 0.56,
+      "delta": -0.046666666666666634,
+      "predicted": {
+        "contradiction": 88,
+        "entailment": 62
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.47619047619047616
+      }
+    },
+    {
+      "layer": 17,
+      "head": 17,
+      "accuracy": 0.5666666666666667,
+      "delta": -0.040000000000000036,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6363636363636364,
+        "entailment": 0.5119047619047619
+      }
+    },
+    {
+      "layer": 17,
+      "head": 9,
+      "accuracy": 0.58,
+      "delta": -0.026666666666666727,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5238095238095238
+      }
+    },
+    {
+      "layer": 18,
+      "head": 7,
+      "accuracy": 0.58,
+      "delta": -0.026666666666666727,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5238095238095238
+      }
+    },
+    {
+      "layer": 19,
+      "head": 9,
+      "accuracy": 0.58,
+      "delta": -0.026666666666666727,
+      "predicted": {
+        "contradiction": 77,
+        "entailment": 73
+      },
+      "by_gold": {
+        "contradiction": 0.6060606060606061,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 20,
+      "accuracy": 0.58,
+      "delta": -0.026666666666666727,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5238095238095238
+      }
+    },
+    {
+      "layer": 17,
+      "head": 11,
+      "accuracy": 0.5866666666666667,
+      "delta": -0.020000000000000018,
+      "predicted": {
+        "contradiction": 84,
+        "entailment": 66
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5238095238095238
+      }
+    },
+    {
+      "layer": 17,
+      "head": 12,
+      "accuracy": 0.5866666666666667,
+      "delta": -0.020000000000000018,
+      "predicted": {
+        "contradiction": 84,
+        "entailment": 66
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5238095238095238
+      }
+    },
+    {
+      "layer": 17,
+      "head": 20,
+      "accuracy": 0.5866666666666667,
+      "delta": -0.020000000000000018,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5357142857142857
+      }
+    },
+    {
+      "layer": 18,
+      "head": 10,
+      "accuracy": 0.5866666666666667,
+      "delta": -0.020000000000000018,
+      "predicted": {
+        "contradiction": 84,
+        "entailment": 66
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5238095238095238
+      }
+    },
+    {
+      "layer": 22,
+      "head": 30,
+      "accuracy": 0.5866666666666667,
+      "delta": -0.020000000000000018,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5357142857142857
+      }
+    },
+    {
+      "layer": 17,
+      "head": 18,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 93,
+        "entailment": 57
+      },
+      "by_gold": {
+        "contradiction": 0.7424242424242424,
+        "entailment": 0.47619047619047616
+      }
+    },
+    {
+      "layer": 18,
+      "head": 3,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5357142857142857
+      }
+    },
+    {
+      "layer": 18,
+      "head": 17,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5357142857142857
+      }
+    },
+    {
+      "layer": 19,
+      "head": 16,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 95,
+        "entailment": 55
+      },
+      "by_gold": {
+        "contradiction": 0.7575757575757576,
+        "entailment": 0.4642857142857143
+      }
+    },
+    {
+      "layer": 19,
+      "head": 18,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5357142857142857
+      }
+    },
+    {
+      "layer": 19,
+      "head": 21,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5357142857142857
+      }
+    },
+    {
+      "layer": 20,
+      "head": 7,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5357142857142857
+      }
+    },
+    {
+      "layer": 20,
+      "head": 8,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5357142857142857
+      }
+    },
+    {
+      "layer": 20,
+      "head": 22,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 21,
+      "head": 2,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 85,
+        "entailment": 65
+      },
+      "by_gold": {
+        "contradiction": 0.6818181818181818,
+        "entailment": 0.5238095238095238
+      }
+    },
+    {
+      "layer": 21,
+      "head": 3,
+      "accuracy": 0.5933333333333334,
+      "delta": -0.013333333333333308,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5357142857142857
+      }
+    },
+    {
+      "layer": 17,
+      "head": 15,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 17,
+      "head": 22,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 70,
+        "entailment": 80
+      },
+      "by_gold": {
+        "contradiction": 0.5757575757575758,
+        "entailment": 0.6190476190476191
+      }
+    },
+    {
+      "layer": 17,
+      "head": 25,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 18,
+      "head": 5,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 18,
+      "head": 14,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 19,
+      "head": 1,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 19,
+      "head": 4,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 19,
+      "head": 24,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 20,
+      "head": 2,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 20,
+      "head": 28,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 19,
+      "accuracy": 0.6,
+      "delta": -0.00666666666666671,
+      "predicted": {
+        "contradiction": 82,
+        "entailment": 68
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 17,
+      "head": 8,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 17,
+      "head": 10,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 17,
+      "head": 14,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6818181818181818,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 17,
+      "head": 30,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 17,
+      "head": 31,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 18,
+      "head": 1,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 18,
+      "head": 12,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 18,
+      "head": 13,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 18,
+      "head": 15,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 18,
+      "head": 19,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.6818181818181818,
+        "entailment": 0.5476190476190477
+      }
+    },
+    {
+      "layer": 18,
+      "head": 21,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 18,
+      "head": 23,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 18,
+      "head": 27,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 18,
+      "head": 28,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 73,
+        "entailment": 77
+      },
+      "by_gold": {
+        "contradiction": 0.6060606060606061,
+        "entailment": 0.6071428571428571
+      }
+    },
+    {
+      "layer": 19,
+      "head": 0,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 3,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 5,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 6,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 7,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 11,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 12,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 15,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 79,
+        "entailment": 71
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 19,
+      "head": 20,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 23,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 25,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 26,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 28,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 29,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 30,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 31,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 0,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 3,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 4,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 5,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 10,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 12,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 13,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 17,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 18,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 24,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 25,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 29,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 30,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 20,
+      "head": 31,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 4,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 5,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 7,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 8,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 12,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 13,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 14,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 15,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 16,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 17,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 20,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 21,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 22,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 23,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 24,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 25,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 26,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 27,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 28,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 29,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 21,
+      "head": 30,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 0,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 1,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 2,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 3,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 5,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 6,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 7,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 8,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 9,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 10,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 14,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 15,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 16,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 17,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 18,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 19,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 20,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 21,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 22,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 25,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 26,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 27,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 28,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 22,
+      "head": 31,
+      "accuracy": 0.6066666666666667,
+      "delta": 0.0,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 17,
+      "head": 23,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 17,
+      "head": 28,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 18,
+      "head": 4,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 18,
+      "head": 8,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 78,
+        "entailment": 72
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5833333333333334
+      }
+    },
+    {
+      "layer": 18,
+      "head": 20,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 18,
+      "head": 25,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 18,
+      "head": 26,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 19,
+      "head": 2,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 19,
+      "head": 22,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 19,
+      "head": 27,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 20,
+      "head": 1,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 20,
+      "head": 6,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 20,
+      "head": 11,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 20,
+      "head": 16,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 20,
+      "head": 19,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 20,
+      "head": 27,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 21,
+      "head": 0,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 21,
+      "head": 1,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 78,
+        "entailment": 72
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5833333333333334
+      }
+    },
+    {
+      "layer": 21,
+      "head": 18,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 21,
+      "head": 31,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 22,
+      "head": 4,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 22,
+      "head": 11,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 22,
+      "head": 12,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 22,
+      "head": 24,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 22,
+      "head": 29,
+      "accuracy": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "predicted": {
+        "contradiction": 80,
+        "entailment": 70
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5714285714285714
+      }
+    },
+    {
+      "layer": 17,
+      "head": 3,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 79,
+        "entailment": 71
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5833333333333334
+      }
+    },
+    {
+      "layer": 17,
+      "head": 5,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 79,
+        "entailment": 71
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5833333333333334
+      }
+    },
+    {
+      "layer": 17,
+      "head": 7,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 73,
+        "entailment": 77
+      },
+      "by_gold": {
+        "contradiction": 0.6212121212121212,
+        "entailment": 0.6190476190476191
+      }
+    },
+    {
+      "layer": 17,
+      "head": 16,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 77,
+        "entailment": 73
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 18,
+      "head": 2,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 79,
+        "entailment": 71
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5833333333333334
+      }
+    },
+    {
+      "layer": 18,
+      "head": 22,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.696969696969697,
+        "entailment": 0.5595238095238095
+      }
+    },
+    {
+      "layer": 19,
+      "head": 19,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 77,
+        "entailment": 73
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 20,
+      "head": 9,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 77,
+        "entailment": 73
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 20,
+      "head": 15,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 79,
+        "entailment": 71
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5833333333333334
+      }
+    },
+    {
+      "layer": 20,
+      "head": 26,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 77,
+        "entailment": 73
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 21,
+      "head": 6,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 77,
+        "entailment": 73
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 21,
+      "head": 10,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 77,
+        "entailment": 73
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 22,
+      "head": 13,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 79,
+        "entailment": 71
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5833333333333334
+      }
+    },
+    {
+      "layer": 22,
+      "head": 23,
+      "accuracy": 0.62,
+      "delta": 0.013333333333333308,
+      "predicted": {
+        "contradiction": 79,
+        "entailment": 71
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5833333333333334
+      }
+    },
+    {
+      "layer": 17,
+      "head": 4,
+      "accuracy": 0.6266666666666667,
+      "delta": 0.020000000000000018,
+      "predicted": {
+        "contradiction": 74,
+        "entailment": 76
+      },
+      "by_gold": {
+        "contradiction": 0.6363636363636364,
+        "entailment": 0.6190476190476191
+      }
+    },
+    {
+      "layer": 17,
+      "head": 6,
+      "accuracy": 0.6266666666666667,
+      "delta": 0.020000000000000018,
+      "predicted": {
+        "contradiction": 78,
+        "entailment": 72
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 18,
+      "head": 16,
+      "accuracy": 0.6266666666666667,
+      "delta": 0.020000000000000018,
+      "predicted": {
+        "contradiction": 78,
+        "entailment": 72
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 18,
+      "head": 18,
+      "accuracy": 0.6266666666666667,
+      "delta": 0.020000000000000018,
+      "predicted": {
+        "contradiction": 74,
+        "entailment": 76
+      },
+      "by_gold": {
+        "contradiction": 0.6363636363636364,
+        "entailment": 0.6190476190476191
+      }
+    },
+    {
+      "layer": 19,
+      "head": 13,
+      "accuracy": 0.6266666666666667,
+      "delta": 0.020000000000000018,
+      "predicted": {
+        "contradiction": 78,
+        "entailment": 72
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 19,
+      "head": 14,
+      "accuracy": 0.6266666666666667,
+      "delta": 0.020000000000000018,
+      "predicted": {
+        "contradiction": 78,
+        "entailment": 72
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 19,
+      "head": 17,
+      "accuracy": 0.6266666666666667,
+      "delta": 0.020000000000000018,
+      "predicted": {
+        "contradiction": 78,
+        "entailment": 72
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 20,
+      "head": 14,
+      "accuracy": 0.6266666666666667,
+      "delta": 0.020000000000000018,
+      "predicted": {
+        "contradiction": 76,
+        "entailment": 74
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.6071428571428571
+      }
+    },
+    {
+      "layer": 17,
+      "head": 1,
+      "accuracy": 0.6333333333333333,
+      "delta": 0.026666666666666616,
+      "predicted": {
+        "contradiction": 75,
+        "entailment": 75
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.6190476190476191
+      }
+    },
+    {
+      "layer": 17,
+      "head": 29,
+      "accuracy": 0.6333333333333333,
+      "delta": 0.026666666666666616,
+      "predicted": {
+        "contradiction": 73,
+        "entailment": 77
+      },
+      "by_gold": {
+        "contradiction": 0.6363636363636364,
+        "entailment": 0.6309523809523809
+      }
+    },
+    {
+      "layer": 18,
+      "head": 6,
+      "accuracy": 0.6333333333333333,
+      "delta": 0.026666666666666616,
+      "predicted": {
+        "contradiction": 75,
+        "entailment": 75
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.6190476190476191
+      }
+    },
+    {
+      "layer": 18,
+      "head": 24,
+      "accuracy": 0.6333333333333333,
+      "delta": 0.026666666666666616,
+      "predicted": {
+        "contradiction": 81,
+        "entailment": 69
+      },
+      "by_gold": {
+        "contradiction": 0.696969696969697,
+        "entailment": 0.5833333333333334
+      }
+    },
+    {
+      "layer": 18,
+      "head": 29,
+      "accuracy": 0.6333333333333333,
+      "delta": 0.026666666666666616,
+      "predicted": {
+        "contradiction": 93,
+        "entailment": 57
+      },
+      "by_gold": {
+        "contradiction": 0.7878787878787878,
+        "entailment": 0.5119047619047619
+      }
+    },
+    {
+      "layer": 20,
+      "head": 23,
+      "accuracy": 0.6333333333333333,
+      "delta": 0.026666666666666616,
+      "predicted": {
+        "contradiction": 77,
+        "entailment": 73
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.6071428571428571
+      }
+    },
+    {
+      "layer": 21,
+      "head": 9,
+      "accuracy": 0.6333333333333333,
+      "delta": 0.026666666666666616,
+      "predicted": {
+        "contradiction": 79,
+        "entailment": 71
+      },
+      "by_gold": {
+        "contradiction": 0.6818181818181818,
+        "entailment": 0.5952380952380952
+      }
+    },
+    {
+      "layer": 17,
+      "head": 13,
+      "accuracy": 0.64,
+      "delta": 0.033333333333333326,
+      "predicted": {
+        "contradiction": 78,
+        "entailment": 72
+      },
+      "by_gold": {
+        "contradiction": 0.6818181818181818,
+        "entailment": 0.6071428571428571
+      }
+    },
+    {
+      "layer": 18,
+      "head": 0,
+      "accuracy": 0.64,
+      "delta": 0.033333333333333326,
+      "predicted": {
+        "contradiction": 76,
+        "entailment": 74
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.6190476190476191
+      }
+    },
+    {
+      "layer": 18,
+      "head": 11,
+      "accuracy": 0.64,
+      "delta": 0.033333333333333326,
+      "predicted": {
+        "contradiction": 70,
+        "entailment": 80
+      },
+      "by_gold": {
+        "contradiction": 0.6212121212121212,
+        "entailment": 0.6547619047619048
+      }
+    },
+    {
+      "layer": 18,
+      "head": 30,
+      "accuracy": 0.64,
+      "delta": 0.033333333333333326,
+      "predicted": {
+        "contradiction": 74,
+        "entailment": 76
+      },
+      "by_gold": {
+        "contradiction": 0.6515151515151515,
+        "entailment": 0.6309523809523809
+      }
+    },
+    {
+      "layer": 17,
+      "head": 0,
+      "accuracy": 0.6466666666666666,
+      "delta": 0.039999999999999925,
+      "predicted": {
+        "contradiction": 83,
+        "entailment": 67
+      },
+      "by_gold": {
+        "contradiction": 0.7272727272727273,
+        "entailment": 0.5833333333333334
+      }
+    },
+    {
+      "layer": 17,
+      "head": 19,
+      "accuracy": 0.6933333333333334,
+      "delta": 0.08666666666666667,
+      "predicted": {
+        "contradiction": 76,
+        "entailment": 74
+      },
+      "by_gold": {
+        "contradiction": 0.7272727272727273,
+        "entailment": 0.6666666666666666
+      }
+    },
+    {
+      "layer": 17,
+      "head": 21,
+      "accuracy": 0.7,
+      "delta": 0.09333333333333327,
+      "predicted": {
+        "contradiction": 67,
+        "entailment": 83
+      },
+      "by_gold": {
+        "contradiction": 0.6666666666666666,
+        "entailment": 0.7261904761904762
+      }
+    },
+    {
+      "layer": 17,
+      "head": 2,
+      "accuracy": 0.7133333333333334,
+      "delta": 0.10666666666666669,
+      "predicted": {
+        "contradiction": 61,
+        "entailment": 89
+      },
+      "by_gold": {
+        "contradiction": 0.6363636363636364,
+        "entailment": 0.7738095238095238
+      }
+    },
+    {
+      "layer": 19,
+      "head": 10,
+      "accuracy": 0.76,
+      "delta": 0.15333333333333332,
+      "predicted": {
+        "contradiction": 60,
+        "entailment": 90
+      },
+      "by_gold": {
+        "contradiction": 0.6818181818181818,
+        "entailment": 0.8214285714285714
+      }
+    }
+  ]
+}
