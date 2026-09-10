@@ -1,0 +1,181 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "items": "data/para_orig.jsonl",
+  "n": 400,
+  "band": [
+    17,
+    19
+  ],
+  "baseline": 0.63,
+  "demo_seed": 7,
+  "rows": [
+    {
+      "layer": 18,
+      "head": 10,
+      "accuracy": 0.6225,
+      "delta": -0.007499999999999951,
+      "predicted": {
+        "contradiction": 195,
+        "entailment": 205
+      },
+      "by_gold": {
+        "contradiction": 0.61,
+        "entailment": 0.635
+      }
+    },
+    {
+      "layer": 19,
+      "head": 21,
+      "accuracy": 0.6225,
+      "delta": -0.007499999999999951,
+      "predicted": {
+        "contradiction": 193,
+        "entailment": 207
+      },
+      "by_gold": {
+        "contradiction": 0.605,
+        "entailment": 0.64
+      }
+    },
+    {
+      "layer": 17,
+      "head": 10,
+      "accuracy": 0.6275,
+      "delta": -0.0025000000000000577,
+      "predicted": {
+        "contradiction": 191,
+        "entailment": 209
+      },
+      "by_gold": {
+        "contradiction": 0.605,
+        "entailment": 0.65
+      }
+    },
+    {
+      "layer": 18,
+      "head": 21,
+      "accuracy": 0.635,
+      "delta": 0.0050000000000000044,
+      "predicted": {
+        "contradiction": 192,
+        "entailment": 208
+      },
+      "by_gold": {
+        "contradiction": 0.615,
+        "entailment": 0.655
+      }
+    },
+    {
+      "layer": 18,
+      "head": 19,
+      "accuracy": 0.6375,
+      "delta": 0.007499999999999951,
+      "predicted": {
+        "contradiction": 195,
+        "entailment": 205
+      },
+      "by_gold": {
+        "contradiction": 0.625,
+        "entailment": 0.65
+      }
+    },
+    {
+      "layer": 19,
+      "head": 19,
+      "accuracy": 0.6375,
+      "delta": 0.007499999999999951,
+      "predicted": {
+        "contradiction": 183,
+        "entailment": 217
+      },
+      "by_gold": {
+        "contradiction": 0.595,
+        "entailment": 0.68
+      }
+    },
+    {
+      "layer": 19,
+      "head": 2,
+      "accuracy": 0.6425,
+      "delta": 0.012499999999999956,
+      "predicted": {
+        "contradiction": 193,
+        "entailment": 207
+      },
+      "by_gold": {
+        "contradiction": 0.625,
+        "entailment": 0.66
+      }
+    },
+    {
+      "layer": 18,
+      "head": 2,
+      "accuracy": 0.6475,
+      "delta": 0.01749999999999996,
+      "predicted": {
+        "contradiction": 191,
+        "entailment": 209
+      },
+      "by_gold": {
+        "contradiction": 0.625,
+        "entailment": 0.67
+      }
+    },
+    {
+      "layer": 17,
+      "head": 21,
+      "accuracy": 0.685,
+      "delta": 0.05500000000000005,
+      "predicted": {
+        "contradiction": 172,
+        "entailment": 228
+      },
+      "by_gold": {
+        "contradiction": 0.615,
+        "entailment": 0.755
+      }
+    },
+    {
+      "layer": 17,
+      "head": 19,
+      "accuracy": 0.6925,
+      "delta": 0.0625,
+      "predicted": {
+        "contradiction": 193,
+        "entailment": 207
+      },
+      "by_gold": {
+        "contradiction": 0.675,
+        "entailment": 0.71
+      }
+    },
+    {
+      "layer": 17,
+      "head": 2,
+      "accuracy": 0.7175,
+      "delta": 0.08750000000000002,
+      "predicted": {
+        "contradiction": 157,
+        "entailment": 243
+      },
+      "by_gold": {
+        "contradiction": 0.61,
+        "entailment": 0.825
+      }
+    },
+    {
+      "layer": 19,
+      "head": 10,
+      "accuracy": 0.74,
+      "delta": 0.10999999999999999,
+      "predicted": {
+        "contradiction": 154,
+        "entailment": 246
+      },
+      "by_gold": {
+        "contradiction": 0.625,
+        "entailment": 0.855
+      }
+    }
+  ]
+}
