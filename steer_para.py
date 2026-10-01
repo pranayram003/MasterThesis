@@ -11,6 +11,13 @@ Detection is not intervention. This script closes that gap by running the same
 steering sweep on the reworded eval sets, and reporting accuracy split by gold
 label so the asymmetry is visible before and after steering.
 
+Each sweep row also logs margins. ent_margin is the logit of the entailment
+option minus the logit of the contradiction option, so positive means the
+model leans True. Per gold label we keep the mean ent_margin and the mean
+margin toward the correct answer, plus the full per item list. Accuracy alone
+cannot tell a contradiction item that moved toward correct without crossing
+the line from one that moved further toward True; the margins can.
+
 What to look for:
 
     steering lifts contradiction accuracy toward entailment accuracy
@@ -25,7 +32,7 @@ the same way as the test items. Without that, part of any drop is the mismatch
 artifact rather than the wording itself.
 
     python steer_para.py --model mistralai/Mistral-7B-Instruct-v0.3 \
-        --vectors vectors/mistral7b.pt --layers 18 22 --n 200
+        --vectors vectors/mistral_bf16.pt --layers 18 22 --n 200
 """
 
 import argparse
@@ -48,7 +55,8 @@ def evaluate(model, tokenizer, items, train_items, ids, steerer, coeff):
     hits = 0
     predicted = collections.Counter()
     by_gold = collections.defaultdict(lambda: [0, 0])
-    for item in items:
+    per_item = []
+    for idx, item in enumerate(items):
         user_turn, order, correct = build(item, "negated", train_items)
         enc = tokenizer(render(user_turn, tokenizer), return_tensors="pt",
                         add_special_tokens=True)
@@ -63,7 +71,26 @@ def evaluate(model, tokenizer, items, train_items, ids, steerer, coeff):
         hits += ok
         by_gold[correct][0] += ok
         by_gold[correct][1] += 1
-    return hits, predicted, by_gold
+        ent_letter = "AB"[list(order).index("entailment")]
+        con_letter = "AB"[list(order).index("contradiction")]
+        ent_margin = scores[ent_letter] - scores[con_letter]
+        per_item.append({"id": item.get("id", idx), "gold": correct,
+                         "ent_margin": round(ent_margin, 4),
+                         "correct": bool(ok)})
+    return hits, predicted, by_gold, per_item
+
+
+def margin_summary(per_item):
+    out = {}
+    for gold in ("entailment", "contradiction"):
+        m = [r["ent_margin"] for r in per_item if r["gold"] == gold]
+        if not m:
+            continue
+        sign = 1.0 if gold == "entailment" else -1.0
+        out[gold] = {"mean_ent_margin": sum(m) / len(m),
+                     "mean_correct_margin": sign * sum(m) / len(m),
+                     "n": len(m)}
+    return out
 
 
 def main():
@@ -123,19 +150,24 @@ def main():
 
             rows = []
             for fraction in COEFFS:
-                hits, predicted, by_gold = evaluate(
+                hits, predicted, by_gold, per_item = evaluate(
                     model, tokenizer, items, train_items, ids, steerer,
                     fraction * scale)
                 low, high = wilson(hits, len(items))
                 split = {k: {"accuracy": v[0] / v[1], "n": v[1]}
                          for k, v in sorted(by_gold.items())}
+                margins = margin_summary(per_item)
                 rows.append({"fraction": fraction, "coeff": fraction * scale,
                              "accuracy": hits / len(items), "ci95": [low, high],
-                             "predicted": dict(predicted), "by_gold": split})
+                             "predicted": dict(predicted), "by_gold": split,
+                             "margins": margins, "per_item": per_item})
                 ent = split.get("entailment", {}).get("accuracy", float("nan"))
                 con = split.get("contradiction", {}).get("accuracy", float("nan"))
+                em = margins.get("entailment", {}).get("mean_correct_margin", float("nan"))
+                cm = margins.get("contradiction", {}).get("mean_correct_margin", float("nan"))
                 print("    coeff %+.2f  acc=%.3f [%.3f, %.3f]   ent=%.3f  con=%.3f"
-                      % (fraction, hits / len(items), low, high, ent, con),
+                      "   margin ent=%+.2f  con=%+.2f"
+                      % (fraction, hits / len(items), low, high, ent, con, em, cm),
                       flush=True)
             steerer.remove()
             results[path]["layers"][str(layer)] = {"scale": scale, "sweep": rows}
