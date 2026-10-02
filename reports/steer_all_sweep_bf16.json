@@ -1,0 +1,1160 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "vectors": "vectors/mistral_bf16.pt",
+  "n": 150,
+  "positions": "all",
+  "results": {
+    "8": {
+      "scale": 1.7229164242744446,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -0.6891665697097779,
+          "accuracy": 0.6133333333333333,
+          "ci95": [
+            0.5334964294452139,
+            0.6875101123484232
+          ],
+          "predicted": {
+            "contradiction": 74,
+            "entailment": 76
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -0.3445832848548889,
+          "accuracy": 0.5733333333333334,
+          "ci95": [
+            0.49332380166580925,
+            0.6496804312594855
+          ],
+          "predicted": {
+            "contradiction": 120,
+            "entailment": 30
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.17229164242744446,
+          "accuracy": 0.68,
+          "ci95": [
+            0.6016545135045653,
+            0.7493558764029761
+          ],
+          "predicted": {
+            "contradiction": 94,
+            "entailment": 56
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.17229164242744446,
+          "accuracy": 0.54,
+          "ci95": [
+            0.46023676745464287,
+            0.6177655414136997
+          ],
+          "predicted": {
+            "entailment": 79,
+            "contradiction": 71
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 0.3445832848548889,
+          "accuracy": 0.4266666666666667,
+          "ci95": [
+            0.3503195687405146,
+            0.5066761983341909
+          ],
+          "predicted": {
+            "entailment": 92,
+            "contradiction": 58
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 0.6891665697097779,
+          "accuracy": 0.43333333333333335,
+          "ci95": [
+            0.35667455895269157,
+            0.5133215929334043
+          ],
+          "predicted": {
+            "entailment": 85,
+            "contradiction": 65
+          }
+        }
+      ]
+    },
+    "10": {
+      "scale": 2.5382129669189455,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -1.0152851867675783,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 75,
+            "entailment": 75
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -0.5076425933837891,
+          "accuracy": 0.4666666666666667,
+          "ci95": [
+            0.38865912474061715,
+            0.5463389512024308
+          ],
+          "predicted": {
+            "contradiction": 72,
+            "entailment": 78
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.25382129669189457,
+          "accuracy": 0.5333333333333333,
+          "ci95": [
+            0.45366104879756924,
+            0.611340875259383
+          ],
+          "predicted": {
+            "entailment": 102,
+            "contradiction": 48
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.25382129669189457,
+          "accuracy": 0.5533333333333333,
+          "ci95": [
+            0.4734297284995479,
+            0.6305733499915755
+          ],
+          "predicted": {
+            "contradiction": 99,
+            "entailment": 51
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 0.5076425933837891,
+          "accuracy": 0.56,
+          "ci95": [
+            0.48004707281221837,
+            0.6369563904902955
+          ],
+          "predicted": {
+            "entailment": 50,
+            "contradiction": 100
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 1.0152851867675783,
+          "accuracy": 0.3933333333333333,
+          "ci95": [
+            0.3187585669410804,
+            0.47323527607667293
+          ],
+          "predicted": {
+            "entailment": 75,
+            "contradiction": 75
+          }
+        }
+      ]
+    },
+    "12": {
+      "scale": 2.8332714796066285,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -1.1333085918426515,
+          "accuracy": 0.5533333333333333,
+          "ci95": [
+            0.4734297284995479,
+            0.6305733499915755
+          ],
+          "predicted": {
+            "contradiction": 117,
+            "entailment": 33
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -0.5666542959213258,
+          "accuracy": 0.6266666666666667,
+          "ci95": [
+            0.5470043657114055,
+            0.7000029457050124
+          ],
+          "predicted": {
+            "contradiction": 102,
+            "entailment": 48
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.2833271479606629,
+          "accuracy": 0.5866666666666667,
+          "ci95": [
+            0.5066570942317348,
+            0.6623479083163406
+          ],
+          "predicted": {
+            "contradiction": 84,
+            "entailment": 66
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.2833271479606629,
+          "accuracy": 0.66,
+          "ci95": [
+            0.5810413820559243,
+            0.7309678534174459
+          ],
+          "predicted": {
+            "contradiction": 99,
+            "entailment": 51
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 0.5666542959213258,
+          "accuracy": 0.66,
+          "ci95": [
+            0.5810413820559243,
+            0.7309678534174459
+          ],
+          "predicted": {
+            "contradiction": 113,
+            "entailment": 37
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 1.1333085918426515,
+          "accuracy": 0.5666666666666667,
+          "ci95": [
+            0.4866784070665957,
+            0.6433254410473084
+          ],
+          "predicted": {
+            "contradiction": 101,
+            "entailment": 49
+          }
+        }
+      ]
+    },
+    "14": {
+      "scale": 3.575597548484802,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -1.430239019393921,
+          "accuracy": 0.5333333333333333,
+          "ci95": [
+            0.45366104879756924,
+            0.611340875259383
+          ],
+          "predicted": {
+            "contradiction": 98,
+            "entailment": 52
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -0.7151195096969605,
+          "accuracy": 0.5,
+          "ci95": [
+            0.4209887046908502,
+            0.5790112953091499
+          ],
+          "predicted": {
+            "contradiction": 87,
+            "entailment": 63
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.35755975484848024,
+          "accuracy": 0.5133333333333333,
+          "ci95": [
+            0.4340164856450284,
+            0.5919842839777524
+          ],
+          "predicted": {
+            "contradiction": 79,
+            "entailment": 71
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.35755975484848024,
+          "accuracy": 0.6333333333333333,
+          "ci95": [
+            0.5537808929385404,
+            0.706226803289268
+          ],
+          "predicted": {
+            "contradiction": 91,
+            "entailment": 59
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 0.7151195096969605,
+          "accuracy": 0.6333333333333333,
+          "ci95": [
+            0.5537808929385404,
+            0.706226803289268
+          ],
+          "predicted": {
+            "contradiction": 111,
+            "entailment": 39
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 1.430239019393921,
+          "accuracy": 0.5733333333333334,
+          "ci95": [
+            0.49332380166580925,
+            0.6496804312594855
+          ],
+          "predicted": {
+            "contradiction": 102,
+            "entailment": 48
+          }
+        }
+      ]
+    },
+    "16": {
+      "scale": 4.878514671325684,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -1.9514058685302738,
+          "accuracy": 0.5933333333333334,
+          "ci95": [
+            0.51334517440468,
+            0.6686602129547861
+          ],
+          "predicted": {
+            "contradiction": 107,
+            "entailment": 43
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -0.9757029342651369,
+          "accuracy": 0.5266666666666666,
+          "ci95": [
+            0.4470991159595076,
+            0.6049024232860539
+          ],
+          "predicted": {
+            "contradiction": 97,
+            "entailment": 53
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.48785146713256844,
+          "accuracy": 0.5066666666666667,
+          "ci95": [
+            0.42749574524160977,
+            0.5855046395697807
+          ],
+          "predicted": {
+            "contradiction": 80,
+            "entailment": 70
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.48785146713256844,
+          "accuracy": 0.7333333333333333,
+          "ci95": [
+            0.6573840257093969,
+            0.7976294426892675
+          ],
+          "predicted": {
+            "contradiction": 86,
+            "entailment": 64
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 0.9757029342651369,
+          "accuracy": 0.7266666666666667,
+          "ci95": [
+            0.6503534444650609,
+            0.7916596391222133
+          ],
+          "predicted": {
+            "contradiction": 105,
+            "entailment": 45
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 1.9514058685302738,
+          "accuracy": 0.66,
+          "ci95": [
+            0.5810413820559243,
+            0.7309678534174459
+          ],
+          "predicted": {
+            "contradiction": 115,
+            "entailment": 35
+          }
+        }
+      ]
+    },
+    "17": {
+      "scale": 5.630722188949585,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -2.252288875579834,
+          "accuracy": 0.7066666666666667,
+          "ci95": [
+            0.6293750243784035,
+            0.7736369047746994
+          ],
+          "predicted": {
+            "contradiction": 26,
+            "entailment": 124
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -1.126144437789917,
+          "accuracy": 0.6,
+          "ci95": [
+            0.5200476798506317,
+            0.6749580923202245
+          ],
+          "predicted": {
+            "contradiction": 34,
+            "entailment": 116
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.5630722188949585,
+          "accuracy": 0.5933333333333334,
+          "ci95": [
+            0.51334517440468,
+            0.6686602129547861
+          ],
+          "predicted": {
+            "contradiction": 51,
+            "entailment": 99
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.5630722188949585,
+          "accuracy": 0.5933333333333334,
+          "ci95": [
+            0.51334517440468,
+            0.6686602129547861
+          ],
+          "predicted": {
+            "contradiction": 95,
+            "entailment": 55
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 1.126144437789917,
+          "accuracy": 0.5933333333333334,
+          "ci95": [
+            0.51334517440468,
+            0.6686602129547861
+          ],
+          "predicted": {
+            "contradiction": 105,
+            "entailment": 45
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 2.252288875579834,
+          "accuracy": 0.5666666666666667,
+          "ci95": [
+            0.4866784070665957,
+            0.6433254410473084
+          ],
+          "predicted": {
+            "contradiction": 101,
+            "entailment": 49
+          }
+        }
+      ]
+    },
+    "18": {
+      "scale": 6.3376627445220945,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -2.535065097808838,
+          "accuracy": 0.74,
+          "ci95": [
+            0.6644342013432283,
+            0.8035796518668268
+          ],
+          "predicted": {
+            "contradiction": 35,
+            "entailment": 115
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -1.267532548904419,
+          "accuracy": 0.72,
+          "ci95": [
+            0.6433420194970179,
+            0.7856706792788659
+          ],
+          "predicted": {
+            "contradiction": 36,
+            "entailment": 114
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.6337662744522095,
+          "accuracy": 0.7133333333333334,
+          "ci95": [
+            0.6363493407951355,
+            0.7796629731693578
+          ],
+          "predicted": {
+            "contradiction": 51,
+            "entailment": 99
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.6337662744522095,
+          "accuracy": 0.5533333333333333,
+          "ci95": [
+            0.4734297284995479,
+            0.6305733499915755
+          ],
+          "predicted": {
+            "contradiction": 91,
+            "entailment": 59
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 1.267532548904419,
+          "accuracy": 0.52,
+          "ci95": [
+            0.4405509365979702,
+            0.5984502178362011
+          ],
+          "predicted": {
+            "contradiction": 94,
+            "entailment": 56
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 2.535065097808838,
+          "accuracy": 0.4533333333333333,
+          "ci95": [
+            0.37582361795320735,
+            0.5331736883670597
+          ],
+          "predicted": {
+            "entailment": 66,
+            "contradiction": 84
+          }
+        }
+      ]
+    },
+    "19": {
+      "scale": 6.898624515533447,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -2.7594498062133788,
+          "accuracy": 0.7733333333333333,
+          "ci95": [
+            0.6999966119167443,
+            0.8330191653502627
+          ],
+          "predicted": {
+            "contradiction": 34,
+            "entailment": 116
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -1.3797249031066894,
+          "accuracy": 0.7333333333333333,
+          "ci95": [
+            0.6573840257093969,
+            0.7976294426892675
+          ],
+          "predicted": {
+            "contradiction": 44,
+            "entailment": 106
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.6898624515533447,
+          "accuracy": 0.68,
+          "ci95": [
+            0.6016545135045653,
+            0.7493558764029761
+          ],
+          "predicted": {
+            "contradiction": 58,
+            "entailment": 92
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.6898624515533447,
+          "accuracy": 0.5733333333333334,
+          "ci95": [
+            0.49332380166580925,
+            0.6496804312594855
+          ],
+          "predicted": {
+            "contradiction": 92,
+            "entailment": 58
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 1.3797249031066894,
+          "accuracy": 0.5266666666666666,
+          "ci95": [
+            0.4470991159595076,
+            0.6049024232860539
+          ],
+          "predicted": {
+            "contradiction": 93,
+            "entailment": 57
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 2.7594498062133788,
+          "accuracy": 0.52,
+          "ci95": [
+            0.4405509365979702,
+            0.5984502178362011
+          ],
+          "predicted": {
+            "entailment": 56,
+            "contradiction": 94
+          }
+        }
+      ]
+    },
+    "20": {
+      "scale": 7.875533580780029,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -3.150213432312012,
+          "accuracy": 0.7666666666666667,
+          "ci95": [
+            0.6928407309593593,
+            0.8271746614962575
+          ],
+          "predicted": {
+            "contradiction": 51,
+            "entailment": 99
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -1.575106716156006,
+          "accuracy": 0.7,
+          "ci95": [
+            0.6224187104297283,
+            0.7675928339119842
+          ],
+          "predicted": {
+            "contradiction": 65,
+            "entailment": 85
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.787553358078003,
+          "accuracy": 0.64,
+          "ci95": [
+            0.5605726755123628,
+            0.712435405526836
+          ],
+          "predicted": {
+            "contradiction": 74,
+            "entailment": 76
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.787553358078003,
+          "accuracy": 0.58,
+          "ci95": [
+            0.49998333511352705,
+            0.656021282623158
+          ],
+          "predicted": {
+            "contradiction": 85,
+            "entailment": 65
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 1.575106716156006,
+          "accuracy": 0.5333333333333333,
+          "ci95": [
+            0.45366104879756924,
+            0.611340875259383
+          ],
+          "predicted": {
+            "contradiction": 88,
+            "entailment": 62
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 3.150213432312012,
+          "accuracy": 0.4666666666666667,
+          "ci95": [
+            0.38865912474061715,
+            0.5463389512024308
+          ],
+          "predicted": {
+            "entailment": 64,
+            "contradiction": 86
+          }
+        }
+      ]
+    },
+    "21": {
+      "scale": 8.714443778991699,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -3.48577751159668,
+          "accuracy": 0.7666666666666667,
+          "ci95": [
+            0.6928407309593593,
+            0.8271746614962575
+          ],
+          "predicted": {
+            "contradiction": 61,
+            "entailment": 89
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -1.74288875579834,
+          "accuracy": 0.68,
+          "ci95": [
+            0.6016545135045653,
+            0.7493558764029761
+          ],
+          "predicted": {
+            "contradiction": 66,
+            "entailment": 84
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -0.87144437789917,
+          "accuracy": 0.6533333333333333,
+          "ci95": [
+            0.5742027248462458,
+            0.7248061258157337
+          ],
+          "predicted": {
+            "contradiction": 76,
+            "entailment": 74
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 0.87144437789917,
+          "accuracy": 0.58,
+          "ci95": [
+            0.49998333511352705,
+            0.656021282623158
+          ],
+          "predicted": {
+            "contradiction": 85,
+            "entailment": 65
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 1.74288875579834,
+          "accuracy": 0.5533333333333333,
+          "ci95": [
+            0.4734297284995479,
+            0.6305733499915755
+          ],
+          "predicted": {
+            "contradiction": 85,
+            "entailment": 65
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 3.48577751159668,
+          "accuracy": 0.5,
+          "ci95": [
+            0.4209887046908502,
+            0.5790112953091499
+          ],
+          "predicted": {
+            "contradiction": 87,
+            "entailment": 63
+          }
+        }
+      ]
+    },
+    "23": {
+      "scale": 10.46519718170166,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -4.186078872680664,
+          "accuracy": 0.7333333333333333,
+          "ci95": [
+            0.6573840257093969,
+            0.7976294426892675
+          ],
+          "predicted": {
+            "contradiction": 56,
+            "entailment": 94
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -2.093039436340332,
+          "accuracy": 0.7,
+          "ci95": [
+            0.6224187104297283,
+            0.7675928339119842
+          ],
+          "predicted": {
+            "contradiction": 65,
+            "entailment": 85
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -1.046519718170166,
+          "accuracy": 0.6466666666666666,
+          "ci95": [
+            0.5673798898960487,
+            0.7186285759545403
+          ],
+          "predicted": {
+            "contradiction": 69,
+            "entailment": 81
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 1.046519718170166,
+          "accuracy": 0.5733333333333334,
+          "ci95": [
+            0.49332380166580925,
+            0.6496804312594855
+          ],
+          "predicted": {
+            "contradiction": 86,
+            "entailment": 64
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 2.093039436340332,
+          "accuracy": 0.5333333333333333,
+          "ci95": [
+            0.45366104879756924,
+            0.611340875259383
+          ],
+          "predicted": {
+            "contradiction": 88,
+            "entailment": 62
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 4.186078872680664,
+          "accuracy": 0.47333333333333333,
+          "ci95": [
+            0.39509757671394596,
+            0.5529008840404923
+          ],
+          "predicted": {
+            "entailment": 65,
+            "contradiction": 85
+          }
+        }
+      ]
+    },
+    "24": {
+      "scale": 11.161780071258544,
+      "sweep": [
+        {
+          "fraction": -0.4,
+          "coeff": -4.464712028503418,
+          "accuracy": 0.78,
+          "ci95": [
+            0.7071754568460243,
+            0.8388407052323733
+          ],
+          "predicted": {
+            "contradiction": 57,
+            "entailment": 93
+          }
+        },
+        {
+          "fraction": -0.2,
+          "coeff": -2.232356014251709,
+          "accuracy": 0.7066666666666667,
+          "ci95": [
+            0.6293750243784035,
+            0.7736369047746994
+          ],
+          "predicted": {
+            "contradiction": 66,
+            "entailment": 84
+          }
+        },
+        {
+          "fraction": -0.1,
+          "coeff": -1.1161780071258545,
+          "accuracy": 0.66,
+          "ci95": [
+            0.5810413820559243,
+            0.7309678534174459
+          ],
+          "predicted": {
+            "contradiction": 69,
+            "entailment": 81
+          }
+        },
+        {
+          "fraction": 0.0,
+          "coeff": 0.0,
+          "accuracy": 0.6066666666666667,
+          "ci95": [
+            0.5267647239233271,
+            0.6812414330589196
+          ],
+          "predicted": {
+            "contradiction": 81,
+            "entailment": 69
+          }
+        },
+        {
+          "fraction": 0.1,
+          "coeff": 1.1161780071258545,
+          "accuracy": 0.5733333333333334,
+          "ci95": [
+            0.49332380166580925,
+            0.6496804312594855
+          ],
+          "predicted": {
+            "contradiction": 86,
+            "entailment": 64
+          }
+        },
+        {
+          "fraction": 0.2,
+          "coeff": 2.232356014251709,
+          "accuracy": 0.5333333333333333,
+          "ci95": [
+            0.45366104879756924,
+            0.611340875259383
+          ],
+          "predicted": {
+            "contradiction": 88,
+            "entailment": 62
+          }
+        },
+        {
+          "fraction": 0.4,
+          "coeff": 4.464712028503418,
+          "accuracy": 0.4866666666666667,
+          "ci95": [
+            0.4080157160222476,
+            0.5659835143549716
+          ],
+          "predicted": {
+            "entailment": 63,
+            "contradiction": 87
+          }
+        }
+      ]
+    }
+  }
+}

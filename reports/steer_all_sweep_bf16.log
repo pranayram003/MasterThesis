@@ -1,0 +1,115 @@
+nohup: ignoring input
+/local/s4566319/MasterThesis/steer_pilot.py:118: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(args.vectors, map_location="cpu")
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.39s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.40s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.34s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.35s/it]
+
+layer 8, mean residual norm 1.7
+  coeff -0.40 x norm   acc=0.613  [0.533, 0.688]  {'contradiction': 74, 'entailment': 76}
+  coeff -0.20 x norm   acc=0.573  [0.493, 0.650]  {'contradiction': 120, 'entailment': 30}
+  coeff -0.10 x norm   acc=0.680  [0.602, 0.749]  {'contradiction': 94, 'entailment': 56}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.540  [0.460, 0.618]  {'entailment': 79, 'contradiction': 71}
+  coeff +0.20 x norm   acc=0.427  [0.350, 0.507]  {'entailment': 92, 'contradiction': 58}
+  coeff +0.40 x norm   acc=0.433  [0.357, 0.513]  {'entailment': 85, 'contradiction': 65}
+
+layer 10, mean residual norm 2.5
+  coeff -0.40 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 75, 'entailment': 75}
+  coeff -0.20 x norm   acc=0.467  [0.389, 0.546]  {'contradiction': 72, 'entailment': 78}
+  coeff -0.10 x norm   acc=0.533  [0.454, 0.611]  {'entailment': 102, 'contradiction': 48}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.553  [0.473, 0.631]  {'contradiction': 99, 'entailment': 51}
+  coeff +0.20 x norm   acc=0.560  [0.480, 0.637]  {'entailment': 50, 'contradiction': 100}
+  coeff +0.40 x norm   acc=0.393  [0.319, 0.473]  {'entailment': 75, 'contradiction': 75}
+
+layer 12, mean residual norm 2.8
+  coeff -0.40 x norm   acc=0.553  [0.473, 0.631]  {'contradiction': 117, 'entailment': 33}
+  coeff -0.20 x norm   acc=0.627  [0.547, 0.700]  {'contradiction': 102, 'entailment': 48}
+  coeff -0.10 x norm   acc=0.587  [0.507, 0.662]  {'contradiction': 84, 'entailment': 66}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.660  [0.581, 0.731]  {'contradiction': 99, 'entailment': 51}
+  coeff +0.20 x norm   acc=0.660  [0.581, 0.731]  {'contradiction': 113, 'entailment': 37}
+  coeff +0.40 x norm   acc=0.567  [0.487, 0.643]  {'contradiction': 101, 'entailment': 49}
+
+layer 14, mean residual norm 3.6
+  coeff -0.40 x norm   acc=0.533  [0.454, 0.611]  {'contradiction': 98, 'entailment': 52}
+  coeff -0.20 x norm   acc=0.500  [0.421, 0.579]  {'contradiction': 87, 'entailment': 63}
+  coeff -0.10 x norm   acc=0.513  [0.434, 0.592]  {'contradiction': 79, 'entailment': 71}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.633  [0.554, 0.706]  {'contradiction': 91, 'entailment': 59}
+  coeff +0.20 x norm   acc=0.633  [0.554, 0.706]  {'contradiction': 111, 'entailment': 39}
+  coeff +0.40 x norm   acc=0.573  [0.493, 0.650]  {'contradiction': 102, 'entailment': 48}
+
+layer 16, mean residual norm 4.9
+  coeff -0.40 x norm   acc=0.593  [0.513, 0.669]  {'contradiction': 107, 'entailment': 43}
+  coeff -0.20 x norm   acc=0.527  [0.447, 0.605]  {'contradiction': 97, 'entailment': 53}
+  coeff -0.10 x norm   acc=0.507  [0.427, 0.586]  {'contradiction': 80, 'entailment': 70}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.733  [0.657, 0.798]  {'contradiction': 86, 'entailment': 64}
+  coeff +0.20 x norm   acc=0.727  [0.650, 0.792]  {'contradiction': 105, 'entailment': 45}
+  coeff +0.40 x norm   acc=0.660  [0.581, 0.731]  {'contradiction': 115, 'entailment': 35}
+
+layer 17, mean residual norm 5.6
+  coeff -0.40 x norm   acc=0.707  [0.629, 0.774]  {'contradiction': 26, 'entailment': 124}
+  coeff -0.20 x norm   acc=0.600  [0.520, 0.675]  {'contradiction': 34, 'entailment': 116}
+  coeff -0.10 x norm   acc=0.593  [0.513, 0.669]  {'contradiction': 51, 'entailment': 99}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.593  [0.513, 0.669]  {'contradiction': 95, 'entailment': 55}
+  coeff +0.20 x norm   acc=0.593  [0.513, 0.669]  {'contradiction': 105, 'entailment': 45}
+  coeff +0.40 x norm   acc=0.567  [0.487, 0.643]  {'contradiction': 101, 'entailment': 49}
+
+layer 18, mean residual norm 6.3
+  coeff -0.40 x norm   acc=0.740  [0.664, 0.804]  {'contradiction': 35, 'entailment': 115}
+  coeff -0.20 x norm   acc=0.720  [0.643, 0.786]  {'contradiction': 36, 'entailment': 114}
+  coeff -0.10 x norm   acc=0.713  [0.636, 0.780]  {'contradiction': 51, 'entailment': 99}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.553  [0.473, 0.631]  {'contradiction': 91, 'entailment': 59}
+  coeff +0.20 x norm   acc=0.520  [0.441, 0.598]  {'contradiction': 94, 'entailment': 56}
+  coeff +0.40 x norm   acc=0.453  [0.376, 0.533]  {'entailment': 66, 'contradiction': 84}
+
+layer 19, mean residual norm 6.9
+  coeff -0.40 x norm   acc=0.773  [0.700, 0.833]  {'contradiction': 34, 'entailment': 116}
+  coeff -0.20 x norm   acc=0.733  [0.657, 0.798]  {'contradiction': 44, 'entailment': 106}
+  coeff -0.10 x norm   acc=0.680  [0.602, 0.749]  {'contradiction': 58, 'entailment': 92}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.573  [0.493, 0.650]  {'contradiction': 92, 'entailment': 58}
+  coeff +0.20 x norm   acc=0.527  [0.447, 0.605]  {'contradiction': 93, 'entailment': 57}
+  coeff +0.40 x norm   acc=0.520  [0.441, 0.598]  {'entailment': 56, 'contradiction': 94}
+
+layer 20, mean residual norm 7.9
+  coeff -0.40 x norm   acc=0.767  [0.693, 0.827]  {'contradiction': 51, 'entailment': 99}
+  coeff -0.20 x norm   acc=0.700  [0.622, 0.768]  {'contradiction': 65, 'entailment': 85}
+  coeff -0.10 x norm   acc=0.640  [0.561, 0.712]  {'contradiction': 74, 'entailment': 76}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.580  [0.500, 0.656]  {'contradiction': 85, 'entailment': 65}
+  coeff +0.20 x norm   acc=0.533  [0.454, 0.611]  {'contradiction': 88, 'entailment': 62}
+  coeff +0.40 x norm   acc=0.467  [0.389, 0.546]  {'entailment': 64, 'contradiction': 86}
+
+layer 21, mean residual norm 8.7
+  coeff -0.40 x norm   acc=0.767  [0.693, 0.827]  {'contradiction': 61, 'entailment': 89}
+  coeff -0.20 x norm   acc=0.680  [0.602, 0.749]  {'contradiction': 66, 'entailment': 84}
+  coeff -0.10 x norm   acc=0.653  [0.574, 0.725]  {'contradiction': 76, 'entailment': 74}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.580  [0.500, 0.656]  {'contradiction': 85, 'entailment': 65}
+  coeff +0.20 x norm   acc=0.553  [0.473, 0.631]  {'contradiction': 85, 'entailment': 65}
+  coeff +0.40 x norm   acc=0.500  [0.421, 0.579]  {'contradiction': 87, 'entailment': 63}
+
+layer 23, mean residual norm 10.5
+  coeff -0.40 x norm   acc=0.733  [0.657, 0.798]  {'contradiction': 56, 'entailment': 94}
+  coeff -0.20 x norm   acc=0.700  [0.622, 0.768]  {'contradiction': 65, 'entailment': 85}
+  coeff -0.10 x norm   acc=0.647  [0.567, 0.719]  {'contradiction': 69, 'entailment': 81}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.573  [0.493, 0.650]  {'contradiction': 86, 'entailment': 64}
+  coeff +0.20 x norm   acc=0.533  [0.454, 0.611]  {'contradiction': 88, 'entailment': 62}
+  coeff +0.40 x norm   acc=0.473  [0.395, 0.553]  {'entailment': 65, 'contradiction': 85}
+
+layer 24, mean residual norm 11.2
+  coeff -0.40 x norm   acc=0.780  [0.707, 0.839]  {'contradiction': 57, 'entailment': 93}
+  coeff -0.20 x norm   acc=0.707  [0.629, 0.774]  {'contradiction': 66, 'entailment': 84}
+  coeff -0.10 x norm   acc=0.660  [0.581, 0.731]  {'contradiction': 69, 'entailment': 81}
+  coeff +0.00 x norm   acc=0.607  [0.527, 0.681]  {'contradiction': 81, 'entailment': 69}
+  coeff +0.10 x norm   acc=0.573  [0.493, 0.650]  {'contradiction': 86, 'entailment': 64}
+  coeff +0.20 x norm   acc=0.533  [0.454, 0.611]  {'contradiction': 88, 'entailment': 62}
+  coeff +0.40 x norm   acc=0.487  [0.408, 0.566]  {'entailment': 63, 'contradiction': 87}
+
+wrote reports/steer_all_sweep_bf16.json
+baseline for comparison: 0.485 unsteered, chance is 0.500
