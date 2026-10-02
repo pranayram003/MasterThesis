@@ -98,7 +98,7 @@ def layer_sweep():
     ax.axhline(0, color="black", lw=0.8)
     ax.set_xlabel("Layer")
     ax.set_ylabel("Change in accuracy, negated items")
-    ax.legend(fontsize=7.5, frameon=False, loc="lower left")
+    ax.legend(fontsize=8, frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.18), ncol=2)
     save(fig, "layer-sweep")
 
 
@@ -149,7 +149,7 @@ def wording():
             best[kind][key] = d["best_layer"]
         print("\n%s uses %s" % (kind, load("val_%s_orig" % kind)["vectors"]))
 
-    fig, axes = plt.subplots(1, 3, figsize=(12, 3.4))
+    fig, axes = plt.subplots(1, 3, figsize=(9, 3.2))
     for ax, kind in zip(axes[:2], ("bf16", "mixed")):
         for key, lab in VARIANTS:
             x, y = data[kind][key]
