@@ -1,0 +1,40 @@
+nohup: ignoring input
+waiting for GPU 0 since Fri Oct  2 12:53:09 AM CEST 2026
+starting on GPU 0 at Fri Oct  2 08:33:12 AM CEST 2026
+/local/s4566319/MasterThesis/steer_para.py:114: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(args.vectors, map_location="cpu")
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:04<00:09,  4.76s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:04,  4.77s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.45s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.53s/it]
+
+data/para_orig.jsonl   n=200   demos rephrased to: orig
+  layer 22, mean residual norm 9.5
+    coeff -0.40  acc=0.760 [0.696, 0.814]   ent=0.875  con=0.614   margin ent=+2.47  con=+1.72
+    coeff -0.20  acc=0.715 [0.649, 0.773]   ent=0.750  con=0.670   margin ent=+2.30  con=+1.63
+    coeff -0.10  acc=0.660 [0.592, 0.722]   ent=0.679  con=0.636   margin ent=+2.17  con=+1.56
+    coeff +0.00  acc=0.630 [0.561, 0.694]   ent=0.607  con=0.659   margin ent=+2.05  con=+1.46
+    coeff +0.10  acc=0.615 [0.546, 0.680]   ent=0.580  con=0.659   margin ent=+1.92  con=+1.37
+    coeff +0.20  acc=0.575 [0.506, 0.641]   ent=0.527  con=0.636   margin ent=+1.78  con=+1.24
+    coeff +0.40  acc=0.520 [0.451, 0.588]   ent=0.464  con=0.591   margin ent=+1.53  con=+0.97
+
+data/para_never.jsonl   n=200   demos rephrased to: never
+  layer 22, mean residual norm 9.5
+    coeff -0.40  acc=0.675 [0.607, 0.736]   ent=0.920  con=0.364   margin ent=+3.17  con=-0.56
+    coeff -0.20  acc=0.605 [0.536, 0.670]   ent=0.812  con=0.341   margin ent=+2.98  con=-0.70
+    coeff -0.10  acc=0.565 [0.496, 0.632]   ent=0.750  con=0.330   margin ent=+2.87  con=-0.76
+    coeff +0.00  acc=0.475 [0.407, 0.544]   ent=0.634  con=0.273   margin ent=+2.75  con=-0.82
+    coeff +0.10  acc=0.445 [0.378, 0.514]   ent=0.562  con=0.295   margin ent=+2.62  con=-0.90
+    coeff +0.20  acc=0.430 [0.363, 0.499]   ent=0.527  con=0.307   margin ent=+2.49  con=-0.98
+    coeff +0.40  acc=0.410 [0.344, 0.479]   ent=0.464  con=0.341   margin ent=+2.25  con=-1.17
+
+data/para_cleft.jsonl   n=200   demos rephrased to: cleft
+  layer 22, mean residual norm 9.6
+    coeff -0.40  acc=0.715 [0.649, 0.773]   ent=0.652  con=0.795   margin ent=+1.50  con=+1.74
+    coeff -0.20  acc=0.610 [0.541, 0.675]   ent=0.464  con=0.795   margin ent=+1.38  con=+1.55
+    coeff -0.10  acc=0.595 [0.526, 0.661]   ent=0.438  con=0.795   margin ent=+1.32  con=+1.45
+    coeff +0.00  acc=0.575 [0.506, 0.641]   ent=0.438  con=0.750   margin ent=+1.26  con=+1.38
+    coeff +0.10  acc=0.565 [0.496, 0.632]   ent=0.429  con=0.739   margin ent=+1.19  con=+1.28
+    coeff +0.20  acc=0.560 [0.491, 0.627]   ent=0.429  con=0.727   margin ent=+1.14  con=+1.18
+    coeff +0.40  acc=0.540 [0.471, 0.608]   ent=0.429  con=0.682   margin ent=+0.99  con=+0.99
+
+wrote reports/steer_cleft_bf16.json
+compare against the unsteered coeff 0.00 row in each block
+finished at Fri Oct  2 08:42:55 AM CEST 2026
