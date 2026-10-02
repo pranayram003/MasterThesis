@@ -57,7 +57,7 @@ def delta(sweep, frac):
 
 def layer_sweep():
     series = {"last": {}, "all": {}}
-    for fname in ("steer_early_bf16", "steer_band_bf16", "steer_pilot_bf16"):
+    for fname in ("steer_early_bf16", "steer_band_bf16", "steer_all_sweep_bf16", "steer_pilot_bf16"):
         d = load(fname)
         for k, v in d["results"].items():
             series[d["positions"]][int(k)] = v["sweep"]
@@ -94,6 +94,17 @@ def layer_sweep():
                            color="grey", s=22, zorder=3,
                            label="random direction, last token, \u00b10.4" if first else None)
                 first = False
+
+    first = True
+    for i, nm in enumerate(["random_all_L22_s1", "random_all_L22_s2", "random_all_L22_s3"]):
+        if not os.path.exists(os.path.join(R, nm + ".json")):
+            continue
+        sw = load(nm)["results"]["22"]["sweep"]
+        print("  %-18s layer 22  all tokens   %+.3f  %+.3f" % (nm, delta(sw, -0.4), delta(sw, 0.4)))
+        for frac in (-0.4, 0.4):
+            ax.scatter(22.5 + (i - 1) * 0.18, delta(sw, frac), marker="+", color="black", s=30, zorder=3,
+                       label="random direction, all tokens, \u00b10.4" if first else None)
+            first = False
 
     ax.axhline(0, color="black", lw=0.8)
     ax.set_xlabel("Layer")
