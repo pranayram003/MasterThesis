@@ -1,0 +1,71 @@
+nohup: ignoring input
+/local/s4566319/MasterThesis/cluster_check.py:142: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(args.vectors, map_location="cpu")
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:06,  3.04s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:06<00:03,  3.15s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  3.12s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  3.12s/it]
+
+data/para_orig.jsonl  n=200  variant=orig  layer 22 norm 9.8  steer coeff -3.9
+  base 50/200
+  base 100/200
+  base 150/200
+  base 200/200
+  base     acc 0.995   true 0.989   false 1.000
+  steered 50/200
+  steered 100/200
+  steered 150/200
+  steered 200/200
+  steered  acc 1.000   true 1.000   false 1.000
+  steering shift of the True-minus-False logit:  place matches -0.48   place differs +0.10
+  saved acts/cluster_orig_unneg.npz
+
+==== cleft  (n=200, steered at L22 x -0.40) ====
+layer cond     acc  T/F       spread T/F   pairCos T/F   sep   probe  caaAUC  F r/w   wrong->other T/F   ARI gold r/w ans letter long
+   18 base     0.57 0.44/0.75  0.65/0.84    0.457/0.459   1.87  1.00   0.99   0.63      0.00/0.00        +0.98 +0.09 +0.01 -0.00 -0.00
+   18 steered  0.71 0.65/0.80  0.65/0.84    0.457/0.459   1.87  1.00   0.99   0.63      0.00/0.00        +0.98 +0.00 +0.17 -0.00 -0.00
+   22 base     0.57 0.44/0.75  0.64/0.85    0.460/0.442   1.85  1.00   1.00   0.47      0.00/0.00        +1.00 +0.08 +0.02 -0.00 -0.00
+   22 steered  0.71 0.65/0.80  0.64/0.85    0.460/0.442   1.85  1.00   1.00   0.66      0.00/0.00        +1.00 +0.00 +0.18 -0.00 -0.00
+      shift along false->true axis (units of centre gap):  true -0.21 (starts +0.50)   false -0.21 (starts -0.50)   on-axis share T/F 0.25/0.25   cos(shift T, shift F) 1.00
+   26 base     0.57 0.44/0.75  0.65/0.85    0.446/0.438   1.82  1.00   1.00   0.48      0.00/0.00        +1.00 +0.08 +0.02 -0.00 -0.00
+   26 steered  0.71 0.65/0.80  0.65/0.85    0.453/0.437   1.83  1.00   0.99   0.65      0.00/0.00        +1.00 +0.00 +0.18 -0.00 -0.00
+      shift along false->true axis (units of centre gap):  true -0.21 (starts +0.50)   false -0.19 (starts -0.50)   on-axis share T/F 0.22/0.20   cos(shift T, shift F) 0.92
+   32 base     0.57 0.44/0.75  0.66/0.93    0.402/0.360   1.58  1.00   0.98   0.23      0.00/0.00        +1.00 +0.08 +0.02 -0.00 -0.00
+   32 steered  0.71 0.65/0.80  0.68/0.88    0.406/0.401   1.66  1.00   0.99   0.44      0.00/0.00        +1.00 +0.00 +0.18 -0.00 -0.00
+      shift along false->true axis (units of centre gap):  true -0.21 (starts +0.50)   false -0.10 (starts -0.50)   on-axis share T/F 0.21/0.09   cos(shift T, shift F) 0.85
+
+==== never  (n=200, steered at L22 x -0.40) ====
+layer cond     acc  T/F       spread T/F   pairCos T/F   sep   probe  caaAUC  F r/w   wrong->other T/F   ARI gold r/w ans letter long
+   18 base     0.47 0.63/0.27  0.68/0.81    0.427/0.462   1.85  1.00   1.00   0.55      0.00/0.00        +1.00 +0.12 -0.00 -0.00 -0.00
+   18 steered  0.68 0.92/0.36  0.68/0.81    0.427/0.462   1.85  1.00   1.00   0.41      0.00/0.00        +1.00 +0.34 +0.12 -0.00 -0.00
+   22 base     0.47 0.63/0.27  0.70/0.86    0.386/0.394   1.66  1.00   1.00   0.35      0.00/0.02        +0.98 +0.11 -0.00 -0.00 -0.00
+   22 steered  0.68 0.92/0.36  0.70/0.86    0.386/0.394   1.66  1.00   1.00   0.23      0.00/0.02        +0.98 +0.33 +0.12 -0.00 -0.00
+      shift along false->true axis (units of centre gap):  true -0.26 (starts +0.50)   false -0.26 (starts -0.50)   on-axis share T/F 0.31/0.31   cos(shift T, shift F) 1.00
+   26 base     0.47 0.63/0.27  0.73/0.85    0.352/0.389   1.60  0.99   0.96   0.34      0.02/0.02        +0.96 +0.12 -0.01 -0.00 -0.00
+   26 steered  0.68 0.92/0.36  0.72/0.85    0.365/0.392   1.62  0.99   0.94   0.28      0.11/0.02        +0.98 +0.33 +0.12 -0.00 -0.00
+      shift along false->true axis (units of centre gap):  true -0.25 (starts +0.50)   false -0.24 (starts -0.50)   on-axis share T/F 0.26/0.24   cos(shift T, shift F) 0.91
+   32 base     0.47 0.63/0.27  0.79/0.86    0.280/0.355   1.41  0.99   0.96   0.19      0.05/0.00        +0.96 +0.13 -0.00 -0.00 -0.00
+   32 steered  0.68 0.92/0.36  0.79/0.84    0.289/0.369   1.45  1.00   0.98   0.31      0.11/0.02        +0.96 +0.34 +0.13 -0.00 -0.00
+      shift along false->true axis (units of centre gap):  true -0.28 (starts +0.50)   false -0.19 (starts -0.50)   on-axis share T/F 0.27/0.19   cos(shift T, shift F) 0.85
+
+==== orig  (n=200, steered at L22 x -0.40) ====
+layer cond     acc  T/F       spread T/F   pairCos T/F   sep   probe  caaAUC  F r/w   wrong->other T/F   ARI gold r/w ans letter long
+   18 base     0.63 0.61/0.66  0.65/0.79    0.471/0.491   1.98  1.00   1.00   0.57      0.00/0.00        +1.00 -0.01 +0.06 -0.00 -0.00
+   18 steered  0.76 0.88/0.61  0.65/0.79    0.471/0.491   1.98  1.00   1.00   0.53      0.00/0.00        +1.00 +0.10 +0.27 -0.00 -0.00
+   22 base     0.63 0.61/0.66  0.66/0.83    0.446/0.446   1.85  1.00   1.00   0.32      0.00/0.03        +0.98 -0.00 +0.07 -0.00 -0.00
+   22 steered  0.76 0.88/0.61  0.66/0.83    0.446/0.446   1.85  1.00   1.00   0.33      0.00/0.03        +0.98 +0.09 +0.28 -0.00 -0.00
+      shift along false->true axis (units of centre gap):  true -0.25 (starts +0.50)   false -0.25 (starts -0.50)   on-axis share T/F 0.32/0.32   cos(shift T, shift F) 1.00
+   26 base     0.63 0.61/0.66  0.69/0.82    0.415/0.440   1.78  0.99   0.98   0.35      0.00/0.03        +0.98 -0.00 +0.07 -0.00 -0.00
+   26 steered  0.76 0.88/0.61  0.68/0.82    0.430/0.450   1.83  0.99   0.96   0.33      0.00/0.03        +0.98 +0.09 +0.28 -0.00 -0.00
+      shift along false->true axis (units of centre gap):  true -0.24 (starts +0.50)   false -0.23 (starts -0.50)   on-axis share T/F 0.27/0.26   cos(shift T, shift F) 0.89
+   32 base     0.63 0.61/0.66  0.74/0.83    0.352/0.415   1.63  0.99   0.99   0.28      0.00/0.00        +1.00 -0.01 +0.06 -0.00 -0.00
+   32 steered  0.76 0.88/0.61  0.75/0.80    0.351/0.431   1.65  0.99   0.99   0.46      0.00/0.06        +0.96 +0.08 +0.29 -0.01 -0.00
+      shift along false->true axis (units of centre gap):  true -0.30 (starts +0.50)   false -0.20 (starts -0.50)   on-axis share T/F 0.32/0.22   cos(shift T, shift F) 0.81
+
+==== orig unnegated vs negated clusters ====
+unnegated accuracy: base 0.995   steered 1.000
+layer   match AUROC on negated axis   (1 = codes the match, 0 = codes the answer)
+   18   1.000
+   22   1.000
+   26   1.000
+   32   0.983
+
+wrote reports/cluster_check.json
+wrote figures/cluster-pca.pdf and .png

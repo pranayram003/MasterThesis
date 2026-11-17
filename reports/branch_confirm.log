@@ -1,0 +1,233 @@
+nohup: ignoring input
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:03,  1.60s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:03<00:01,  1.58s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.49s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.52s/it]
+/local/s4566319/MasterThesis/branch_steer.py:161: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  vectors = torch.load(args.vectors_out, map_location="cpu")["directions"]
+/local/s4566319/MasterThesis/branch_steer.py:179: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ref = torch.load(args.reference, map_location="cpu")["resid_diff"]
+
+cosines at layer 17
+                   caa_neg  false_naive false_branch  true_branch  both_branch
+      caa_neg        +1.00        -0.10        +0.02        +0.27        +0.26
+  false_naive        -0.10        +1.00        +0.75        -0.39        +0.34
+ false_branch        +0.02        +0.75        +1.00        -0.40        +0.57
+  true_branch        +0.27        -0.39        -0.40        +1.00        +0.53
+  both_branch        +0.26        +0.34        +0.57        +0.53        +1.00
+  cos(caa_neg, mistral_bf16) = +1.000   (should be high)
+
+cosines at layer 18
+                   caa_neg  false_naive false_branch  true_branch  both_branch
+      caa_neg        +1.00        -0.02        +0.11        +0.35        +0.34
+  false_naive        -0.02        +1.00        +0.73        -0.21        +0.37
+ false_branch        +0.11        +0.73        +1.00        -0.09        +0.66
+  true_branch        +0.35        -0.21        -0.09        +1.00        +0.69
+  both_branch        +0.34        +0.37        +0.66        +0.69        +1.00
+  cos(caa_neg, mistral_bf16) = +1.000   (should be high)
+
+cosines at layer 19
+                   caa_neg  false_naive false_branch  true_branch  both_branch
+      caa_neg        +1.00        -0.03        +0.12        +0.30        +0.30
+  false_naive        -0.03        +1.00        +0.69        -0.20        +0.36
+ false_branch        +0.12        +0.69        +1.00        -0.05        +0.70
+  true_branch        +0.30        -0.20        -0.05        +1.00        +0.68
+  both_branch        +0.30        +0.36        +0.70        +0.68        +1.00
+  cos(caa_neg, mistral_bf16) = +1.000   (should be high)
+
+==== data/para_orig.jsonl  n=200 ====
+layer 17  norm 5.6   no steering   acc 0.630   true 0.607   false 0.659
+  direction      frac   acc    true   false   true fixed/broke   false fixed/broke
+  false_branch   +0.1   0.685  0.634  0.750          4/1                8/0  
+  false_branch   +0.2   0.745  0.661  0.852          7/1               19/2  
+  false_branch   +0.3   0.750  0.661  0.864         11/5               22/4  
+  random_s0      +0.1   0.610  0.536  0.705          0/8                5/1  
+  random_s0      +0.2   0.600  0.491  0.739          0/13               8/1  
+  random_s0      +0.3   0.590  0.438  0.784          0/19              12/1  
+  random_s1      +0.1   0.660  0.634  0.693          3/0                3/0  
+  random_s1      +0.2   0.665  0.643  0.693          5/1                7/4  
+  random_s1      +0.3   0.695  0.705  0.682         12/1               10/8  
+  random_s2      +0.1   0.660  0.634  0.693          4/1                3/0  
+  random_s2      +0.2   0.695  0.643  0.761          5/1                9/0  
+  random_s2      +0.3   0.720  0.661  0.795          7/1               13/1  
+  random_s3      +0.1   0.655  0.643  0.670          4/0                1/0  
+  random_s3      +0.2   0.685  0.679  0.693          8/0                3/0  
+  random_s3      +0.3   0.705  0.679  0.739          9/1                7/0  
+  random null  +0.10   false 0.670-0.705  true 0.536-0.643  (n=4)
+  random null  +0.20   false 0.693-0.761  true 0.491-0.679  (n=4)
+  random null  +0.30   false 0.682-0.795  true 0.438-0.705  (n=4)
+layer 18  norm 6.3   no steering   acc 0.630   true 0.607   false 0.659
+  direction      frac   acc    true   false   true fixed/broke   false fixed/broke
+  false_branch   +0.1   0.705  0.643  0.784          6/2               11/0  
+  false_branch   +0.2   0.695  0.616  0.795         12/11              17/5  
+  false_branch   +0.3   0.635  0.545  0.750         16/23              17/9  
+  random_s0      +0.1   0.610  0.580  0.648          0/3                0/1  
+  random_s0      +0.2   0.585  0.554  0.625          0/6                0/3  
+  random_s0      +0.3   0.560  0.536  0.591          0/8                0/6  
+  random_s1      +0.1   0.630  0.616  0.648          2/1                0/1  
+  random_s1      +0.2   0.620  0.598  0.648          2/3                1/2  
+  random_s1      +0.3   0.630  0.607  0.659          3/3                2/2  
+  random_s2      +0.1   0.655  0.643  0.670          5/1                2/1  
+  random_s2      +0.2   0.705  0.688  0.727         10/1                7/1  
+  random_s2      +0.3   0.745  0.741  0.750         18/3               11/3  
+  random_s3      +0.1   0.635  0.598  0.682          0/1                2/0  
+  random_s3      +0.2   0.620  0.589  0.659          0/2                3/3  
+  random_s3      +0.3   0.600  0.554  0.659          0/6                7/7  
+  random null  +0.10   false 0.648-0.682  true 0.580-0.643  (n=4)
+  random null  +0.20   false 0.625-0.727  true 0.554-0.688  (n=4)
+  random null  +0.30   false 0.591-0.750  true 0.536-0.741  (n=4)
+layer 19  norm 6.9   no steering   acc 0.630   true 0.607   false 0.659
+  direction      frac   acc    true   false   true fixed/broke   false fixed/broke
+  false_branch   +0.1   0.715  0.679  0.761          9/1               10/1  
+  false_branch   +0.2   0.725  0.696  0.761         19/9               14/5  
+  false_branch   +0.3   0.660  0.625  0.705         26/24              17/13 
+  random_s0      +0.1   0.625  0.598  0.659          0/1                0/0  
+  random_s0      +0.2   0.620  0.580  0.670          0/3                1/0  
+  random_s0      +0.3   0.615  0.580  0.659          0/3                1/1  
+  random_s1      +0.1   0.640  0.625  0.659          2/0                0/0  
+  random_s1      +0.2   0.650  0.643  0.659          5/1                1/1  
+  random_s1      +0.3   0.655  0.652  0.659          6/1                1/1  
+  random_s2      +0.1   0.630  0.607  0.659          0/0                0/0  
+  random_s2      +0.2   0.635  0.616  0.659          2/1                1/1  
+  random_s2      +0.3   0.640  0.616  0.670          3/2                2/1  
+  random_s3      +0.1   0.660  0.652  0.670          5/0                2/1  
+  random_s3      +0.2   0.700  0.705  0.693         11/0                6/3  
+  random_s3      +0.3   0.700  0.741  0.648         16/1                7/8  
+  random null  +0.10   false 0.659-0.670  true 0.598-0.652  (n=4)
+  random null  +0.20   false 0.659-0.693  true 0.580-0.705  (n=4)
+  random null  +0.30   false 0.648-0.670  true 0.580-0.741  (n=4)
+  combined steering
+  false_branch@18:0.2,caa_neg@22:-0.4          acc 0.655  true 0.652  false 0.659   true 32/27  false 17/17
+  false_branch@18:0.1,caa_neg@22:-0.4          acc 0.725  true 0.786  false 0.648   true 29/9  false 16/17
+  false_branch@18:0.2,caa_neg@22:-0.2          acc 0.680  true 0.661  false 0.705   true 25/19  false 17/13
+
+==== data/para_never.jsonl  n=200 ====
+layer 17  norm 5.6   no steering   acc 0.475   true 0.634   false 0.273
+  direction      frac   acc    true   false   true fixed/broke   false fixed/broke
+  false_branch   +0.1   0.550  0.634  0.443          1/1               15/0  
+  false_branch   +0.2   0.640  0.696  0.568          7/0               27/1  
+  false_branch   +0.3   0.720  0.714  0.727         10/1               43/3  
+  random_s0      +0.1   0.445  0.545  0.318          0/10               5/1  
+  random_s0      +0.2   0.445  0.491  0.386          0/16              11/1  
+  random_s0      +0.3   0.440  0.455  0.420          0/20              15/2  
+  random_s1      +0.1   0.500  0.634  0.330          0/0                5/0  
+  random_s1      +0.2   0.535  0.652  0.386          3/1               12/2  
+  random_s1      +0.3   0.565  0.696  0.398          7/0               14/3  
+  random_s2      +0.1   0.530  0.643  0.386          1/0               10/0  
+  random_s2      +0.2   0.590  0.705  0.443          8/0               16/1  
+  random_s2      +0.3   0.620  0.696  0.523          8/1               24/2  
+  random_s3      +0.1   0.485  0.634  0.295          0/0                2/0  
+  random_s3      +0.2   0.515  0.670  0.318          5/1                4/0  
+  random_s3      +0.3   0.540  0.670  0.375          5/1                9/0  
+  random null  +0.10   false 0.295-0.386  true 0.545-0.643  (n=4)
+  random null  +0.20   false 0.318-0.443  true 0.491-0.705  (n=4)
+  random null  +0.30   false 0.375-0.523  true 0.455-0.696  (n=4)
+layer 18  norm 6.3   no steering   acc 0.475   true 0.634   false 0.273
+  direction      frac   acc    true   false   true fixed/broke   false fixed/broke
+  false_branch   +0.1   0.585  0.679  0.466          5/0               17/0  
+  false_branch   +0.2   0.670  0.696  0.636          9/2               36/4  
+  false_branch   +0.3   0.730  0.741  0.716         15/3               45/6  
+  random_s0      +0.1   0.455  0.598  0.273          0/4                0/0  
+  random_s0      +0.2   0.445  0.571  0.284          0/7                2/1  
+  random_s0      +0.3   0.415  0.527  0.273          0/12               3/3  
+  random_s1      +0.1   0.475  0.634  0.273          0/0                0/0  
+  random_s1      +0.2   0.480  0.634  0.284          0/0                1/0  
+  random_s1      +0.3   0.480  0.616  0.307          0/2                3/0  
+  random_s2      +0.1   0.530  0.679  0.341          5/0                6/0  
+  random_s2      +0.2   0.575  0.741  0.364         12/0                8/0  
+  random_s2      +0.3   0.620  0.786  0.409         17/0               13/1  
+  random_s3      +0.1   0.495  0.634  0.318          0/0                4/0  
+  random_s3      +0.2   0.500  0.625  0.341          0/1                6/0  
+  random_s3      +0.3   0.505  0.607  0.375          0/3               12/3  
+  random null  +0.10   false 0.273-0.341  true 0.598-0.679  (n=4)
+  random null  +0.20   false 0.284-0.364  true 0.571-0.741  (n=4)
+  random null  +0.30   false 0.273-0.409  true 0.527-0.786  (n=4)
+layer 19  norm 6.9   no steering   acc 0.475   true 0.634   false 0.273
+  direction      frac   acc    true   false   true fixed/broke   false fixed/broke
+  false_branch   +0.1   0.595  0.750  0.398         13/0               12/1  
+  false_branch   +0.2   0.690  0.839  0.500         23/0               23/3  
+  false_branch   +0.3   0.750  0.884  0.580         31/3               34/7  
+  random_s0      +0.1   0.465  0.616  0.273          0/2                0/0  
+  random_s0      +0.2   0.480  0.616  0.307          0/2                3/0  
+  random_s0      +0.3   0.470  0.607  0.295          0/3                3/1  
+  random_s1      +0.1   0.475  0.634  0.273          0/0                0/0  
+  random_s1      +0.2   0.495  0.670  0.273          4/0                0/0  
+  random_s1      +0.3   0.510  0.679  0.295          5/0                2/0  
+  random_s2      +0.1   0.475  0.616  0.295          0/2                2/0  
+  random_s2      +0.2   0.480  0.616  0.307          0/2                4/1  
+  random_s2      +0.3   0.480  0.616  0.307          0/2                4/1  
+  random_s3      +0.1   0.500  0.652  0.307          2/0                3/0  
+  random_s3      +0.2   0.565  0.741  0.341         12/0                6/0  
+  random_s3      +0.3   0.590  0.795  0.330         18/0                8/3  
+  random null  +0.10   false 0.273-0.307  true 0.616-0.652  (n=4)
+  random null  +0.20   false 0.273-0.341  true 0.616-0.741  (n=4)
+  random null  +0.30   false 0.295-0.330  true 0.607-0.795  (n=4)
+  combined steering
+  false_branch@18:0.2,caa_neg@22:-0.4          acc 0.795  true 0.929  false 0.625   true 37/4  false 45/14
+  false_branch@18:0.1,caa_neg@22:-0.4          acc 0.765  true 0.938  false 0.545   true 35/1  false 37/13
+  false_branch@18:0.2,caa_neg@22:-0.2          acc 0.755  true 0.848  false 0.636   true 26/2  false 41/9
+
+==== data/para_cleft.jsonl  n=200 ====
+layer 17  norm 5.5   no steering   acc 0.575   true 0.438   false 0.750
+  direction      frac   acc    true   false   true fixed/broke   false fixed/broke
+  false_branch   +0.1   0.610  0.429  0.841          0/1                8/0  
+  false_branch   +0.2   0.645  0.429  0.920          0/1               15/0  
+  false_branch   +0.3   0.640  0.420  0.920          0/2               15/0  
+  random_s0      +0.1   0.580  0.429  0.773          0/1                3/1  
+  random_s0      +0.2   0.580  0.429  0.773          0/1                4/2  
+  random_s0      +0.3   0.590  0.429  0.795          0/1                5/1  
+  random_s1      +0.1   0.590  0.429  0.795          0/1                4/0  
+  random_s1      +0.2   0.605  0.429  0.830          0/1               11/4  
+  random_s1      +0.3   0.575  0.429  0.761          0/1               12/11 
+  random_s2      +0.1   0.595  0.429  0.807          0/1                5/0  
+  random_s2      +0.2   0.605  0.429  0.830          0/1                7/0  
+  random_s2      +0.3   0.605  0.429  0.830          0/1               11/4  
+  random_s3      +0.1   0.600  0.438  0.807          0/0                5/0  
+  random_s3      +0.2   0.610  0.438  0.830          0/0                7/0  
+  random_s3      +0.3   0.630  0.438  0.875          0/0               11/0  
+  random null  +0.10   false 0.773-0.807  true 0.429-0.438  (n=4)
+  random null  +0.20   false 0.773-0.830  true 0.429-0.438  (n=4)
+  random null  +0.30   false 0.761-0.875  true 0.429-0.438  (n=4)
+layer 18  norm 6.3   no steering   acc 0.575   true 0.438   false 0.750
+  direction      frac   acc    true   false   true fixed/broke   false fixed/broke
+  false_branch   +0.1   0.605  0.438  0.818          0/0                7/1  
+  false_branch   +0.2   0.630  0.446  0.864          2/1               12/2  
+  false_branch   +0.3   0.625  0.446  0.852          4/3               12/3  
+  random_s0      +0.1   0.575  0.429  0.761          0/1                1/0  
+  random_s0      +0.2   0.575  0.429  0.761          0/1                2/1  
+  random_s0      +0.3   0.570  0.429  0.750          0/1                2/2  
+  random_s1      +0.1   0.575  0.438  0.750          0/0                1/1  
+  random_s1      +0.2   0.580  0.438  0.761          0/0                2/1  
+  random_s1      +0.3   0.575  0.438  0.750          0/0                2/2  
+  random_s2      +0.1   0.595  0.438  0.795          0/0                4/0  
+  random_s2      +0.2   0.605  0.455  0.795          2/0                4/0  
+  random_s2      +0.3   0.640  0.500  0.818          7/0                7/1  
+  random_s3      +0.1   0.585  0.438  0.773          0/0                2/0  
+  random_s3      +0.2   0.580  0.438  0.761          0/0                1/0  
+  random_s3      +0.3   0.585  0.429  0.784          0/1                3/0  
+  random null  +0.10   false 0.750-0.795  true 0.429-0.438  (n=4)
+  random null  +0.20   false 0.761-0.795  true 0.429-0.455  (n=4)
+  random null  +0.30   false 0.750-0.818  true 0.429-0.500  (n=4)
+layer 19  norm 6.9   no steering   acc 0.575   true 0.438   false 0.750
+  direction      frac   acc    true   false   true fixed/broke   false fixed/broke
+  false_branch   +0.1   0.595  0.438  0.795          0/0                5/1  
+  false_branch   +0.2   0.635  0.464  0.852          3/0               11/2  
+  false_branch   +0.3   0.675  0.536  0.852         13/2               12/3  
+  random_s0      +0.1   0.570  0.438  0.739          0/0                1/2  
+  random_s0      +0.2   0.570  0.429  0.750          0/1                2/2  
+  random_s0      +0.3   0.570  0.429  0.750          0/1                3/3  
+  random_s1      +0.1   0.580  0.438  0.761          0/0                1/0  
+  random_s1      +0.2   0.590  0.438  0.784          0/0                3/0  
+  random_s1      +0.3   0.590  0.438  0.784          0/0                4/1  
+  random_s2      +0.1   0.595  0.438  0.795          0/0                4/0  
+  random_s2      +0.2   0.600  0.438  0.807          0/0                5/0  
+  random_s2      +0.3   0.605  0.438  0.818          0/0                7/1  
+  random_s3      +0.1   0.595  0.438  0.795          0/0                4/0  
+  random_s3      +0.2   0.590  0.438  0.784          0/0                5/2  
+  random_s3      +0.3   0.620  0.464  0.818          3/0                8/2  
+  random null  +0.10   false 0.739-0.795  true 0.438-0.438  (n=4)
+  random null  +0.20   false 0.750-0.807  true 0.429-0.438  (n=4)
+  random null  +0.30   false 0.750-0.818  true 0.429-0.464  (n=4)
+  combined steering
+  false_branch@18:0.2,caa_neg@22:-0.4          acc 0.725  true 0.750  false 0.693   true 40/5  false 12/17
+  false_branch@18:0.1,caa_neg@22:-0.4          acc 0.715  true 0.688  false 0.750   true 29/1  false 12/12
+  false_branch@18:0.2,caa_neg@22:-0.2          acc 0.655  true 0.536  false 0.807   true 13/2  false 12/7
+
+wrote reports/branch_confirm.json
