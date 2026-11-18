@@ -1,0 +1,62 @@
+nohup: ignoring input
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:03,  1.56s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:03<00:01,  1.53s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:05<00:00,  1.78s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:05<00:00,  1.72s/it]
+/local/s4566319/MasterThesis/branch_steer.py:162: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  vectors = torch.load(args.vectors_out, map_location="cpu")["directions"]
+/local/s4566319/MasterThesis/branch_steer.py:180: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ref = torch.load(args.reference, map_location="cpu")["resid_diff"]
+
+==== data/para_orig.jsonl  n=462 ====
+  combined steering
+  caa_neg@22:-0.4                              acc 0.703  true 0.822  false 0.597   true 47/1  false 24/26
+  false_branch@18:0.2                          acc 0.647  true 0.548  false 0.737   true 9/23  false 38/6
+  false_branch@18:0.3                          acc 0.565  true 0.438  false 0.679   true 18/56  false 38/20
+  false_branch@18:0.2,caa_neg@22:-0.4          acc 0.574  true 0.575  false 0.572   true 59/67  false 37/45
+  random_s0@18:0.2                             acc 0.584  true 0.580  false 0.588   true 0/7  false 3/7
+  random_s1@18:0.2                             acc 0.608  true 0.616  false 0.601   true 2/1  false 2/3
+
+==== data/para_did_not.jsonl  n=462 ====
+  combined steering
+  caa_neg@22:-0.4                              acc 0.753  true 0.927  false 0.597   true 48/0  false 24/31
+  false_branch@18:0.2                          acc 0.745  true 0.744  false 0.745   true 10/2  false 36/7
+  false_branch@18:0.3                          acc 0.716  true 0.699  false 0.733   true 15/17  false 37/11
+  false_branch@18:0.2,caa_neg@22:-0.4          acc 0.703  true 0.840  false 0.580   true 51/22  false 37/48
+  random_s0@18:0.2                             acc 0.628  true 0.653  false 0.605   true 0/12  false 1/6
+  random_s1@18:0.2                             acc 0.656  true 0.712  false 0.605   true 3/2  false 1/6
+
+==== data/para_never.jsonl  n=462 ====
+  combined steering
+  caa_neg@22:-0.4                              acc 0.591  true 0.881  false 0.329   true 51/0  false 25/40
+  false_branch@18:0.2                          acc 0.615  true 0.703  false 0.535   true 12/0  false 51/16
+  false_branch@18:0.3                          acc 0.665  true 0.721  false 0.613   true 22/6  false 79/25
+  false_branch@18:0.2,caa_neg@22:-0.4          acc 0.690  true 0.904  false 0.498   true 62/6  false 83/57
+  random_s0@18:0.2                             acc 0.485  true 0.594  false 0.387   true 0/12  false 7/8
+  random_s1@18:0.2                             acc 0.485  true 0.639  false 0.346   true 1/3  false 1/12
+
+==== data/para_never_been.jsonl  n=462 ====
+  combined steering
+  caa_neg@22:-0.4                              acc 0.658  true 0.895  false 0.444   true 51/0  false 24/44
+  false_branch@18:0.2                          acc 0.697  true 0.735  false 0.663   true 16/0  false 47/14
+  false_branch@18:0.3                          acc 0.710  true 0.763  false 0.663   true 23/1  false 66/33
+  false_branch@18:0.2,caa_neg@22:-0.4          acc 0.734  true 0.927  false 0.560   true 62/4  false 67/59
+  random_s0@18:0.2                             acc 0.571  true 0.630  false 0.519   true 1/8  false 3/5
+  random_s1@18:0.2                             acc 0.580  true 0.676  false 0.494   true 3/0  false 1/9
+
+==== data/para_not_been.jsonl  n=462 ====
+  combined steering
+  caa_neg@22:-0.4                              acc 0.771  true 0.950  false 0.609   true 48/0  false 19/34
+  false_branch@18:0.2                          acc 0.749  true 0.744  false 0.753   true 7/4  false 28/8
+  false_branch@18:0.3                          acc 0.729  true 0.735  false 0.724   true 15/14  false 30/17
+  false_branch@18:0.2,caa_neg@22:-0.4          acc 0.727  true 0.881  false 0.588   true 51/18  false 30/50
+  random_s0@18:0.2                             acc 0.682  true 0.685  false 0.679   true 0/10  false 3/1
+  random_s1@18:0.2                             acc 0.688  true 0.740  false 0.642   true 4/2  false 1/8
+
+==== data/para_cleft.jsonl  n=462 ====
+  combined steering
+  caa_neg@22:-0.4                              acc 0.660  true 0.594  false 0.720   true 19/0  false 24/26
+  false_branch@18:0.2                          acc 0.662  true 0.511  false 0.798   true 1/0  false 28/11
+  false_branch@18:0.3                          acc 0.669  true 0.521  false 0.802   true 6/3  false 34/16
+  false_branch@18:0.2,caa_neg@22:-0.4          acc 0.684  true 0.694  false 0.675   true 51/10  false 37/50
+  random_s0@18:0.2                             acc 0.619  true 0.507  false 0.720   true 0/0  false 3/5
+  random_s1@18:0.2                             acc 0.617  true 0.507  false 0.716   true 0/0  false 2/5
+
+wrote reports/branch_heldout.json
